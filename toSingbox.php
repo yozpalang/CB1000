@@ -326,8 +326,8 @@ function generate_singbox_profile(string $base64_configs, array $base_structure,
 //profile-title: base64:{$base64Name}
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
-//support-url: https://t.me/V2rayCollector
-//profile-web-page-url: https://t.me/V2rayCollectorBot
+//support-url: https://t.me/yebekhe
+//profile-web-page-url: ithub.com/itsyebekhe/PSG
 
 HEADER;
 
@@ -362,7 +362,7 @@ if (!is_dir(OUTPUT_DIR)) {
 foreach ($files_to_process as $filepath) {
     // **ROBUSTNESS**: Use pathinfo to get filename reliably.
     $filename = pathinfo($filepath, PATHINFO_FILENAME);
-    $profile_name = "TVC | " . strtoupper($filename);
+    $profile_name = "PSG | " . strtoupper($filename);
     
     echo "Processing {$filename}..." . PHP_EOL;
 
