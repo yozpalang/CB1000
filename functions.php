@@ -506,8 +506,8 @@ function hiddifyHeader(string $subscriptionName): string
 #profile-title: base64:{$base64Name}
 #profile-update-interval: 1
 #subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
-#support-url: https://t.me/v2raycollector
-#profile-web-page-url: https://github.com/yebekhe/TelegramV2rayCollector
+#support-url: https://t.me/yebekhe
+#profile-web-page-url: https://github.com/itsyebekhe/PSG
 
 HEADER;
 }
