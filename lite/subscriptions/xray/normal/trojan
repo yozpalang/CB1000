@@ -10,6 +10,8 @@ trojan://telegram-id-directvpn@13.37.72.82:22223?security=tls&alpn=http/1.1&head
 trojan://telegram-id-directvpn@13.38.221.138:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#🇫🇷 FR | 🟢 | trojan | @directvpn | 15
 trojan://3774827088566296576@13.213.142.42:443?security=tls&sni=exotic-bengal.treefrog761.one&type=tcp&allowInsecure=1#🇸🇬 SG | 🟢 | trojan | @filter_breaker | 95
 trojan://b75c9731-408d-4aa6-8ae9-3857205113a1@sdf.986986.shop:443?type=ws&host=sdf.986986.shop&path=/Fua6SQPTzLu4VMZvbeVA9&security=tls&sni=sdf.986986.shop&alpn=http/1.1&fp=chrome#🇺🇸 US | 🟢 | trojan | @freevpnatm | 12
+trojan://4174b95d-115e-4d39-add6-1f8db95bb860@172.67.153.179:443?path=/uzJNzgkkYWRWGxgFnoFPw1&security=tls&alpn=http/1.1&host=qqqqqqqqqqa.www890604.dpdns.org&fp=chrome&type=ws&sni=qqqqqqqqqqa.www890604.dpdns.org#🇺🇸 US | 🟢 | trojan | @ip_cf_config | 12
+trojan://Xa4^l(;.;B#a@104.18.26.90:443?path=/trUXByA1rnbs4YQ1Xw?ed=2560&security=tls&alpn=h3,h2,http/1.1&host=s1.mitivpn.workers.dev&fp=randomized&type=ws&sni=S1.mitivpN.wOrKeRS.DEV#🇺🇸 US | 🟢 | trojan | @ip_cf_config | 13
 trojan://telegram-id-privatevpns@15.236.173.146:22222?type=tcp&security=tls&sni=trojan.burgerip.co.uk&allowInsecure=1#🇫🇷 FR | 🟢 | trojan | @jiedianf | 9
 trojan://maradona_vpn@maradona_vpn10.history-paint.art:443?path=/wss24142?ed=2048&security=tls&alpn=http/1.1&host=teo.history-paint.art&fp=chrome&type=ws&sni=teo.history-paint.art#❔ XX | 🟢 | trojan | @maradona_vpn | 7
 trojan://Maradona_vpn@maradona_vpn.history-paint.art:443?security=tls&sni=teo.history-paint.art&alpn=h2&fp=chrome&type=grpc&serviceName=grpc20337&mode=multi#❔ XX | 🟢 | trojan | @maradona_vpn | 8
@@ -28,7 +30,6 @@ trojan://79c935c0-27dc-4383-b307-dcac1b8e5509@104.149.155.13:443?security=tls&sn
 trojan://1Ts00awMZy8nmxQC-4mBbg@94.156.203.237:2083?security=tls&type=ws&host=&headerType=&path=&sni=50e191d635974bc4.gstatic.com&fp=&alpn=#🇨🇭 CH | 🟢 | trojan | @v2rayo7ybv67i76 | 12
 trojan://telegram-id-v2rayvpnchannel@13.37.72.82:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#🇫🇷 FR | 🟢 | trojan | @v2rayvpnchannel | 14
 trojan://telegram-id-v2rayvpnchannel@13.38.221.138:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#🇫🇷 FR | 🟢 | trojan | @v2rayvpnchannel | 15
-trojan://4174b95d-115e-4d39-add6-1f8db95bb860@172.67.153.179:443?path=/uzJNzgkkYWRWGxgFnoFPw1&security=tls&alpn=http/1.1&host=qqqqqqqqqqa.www890604.dpdns.org&fp=chrome&type=ws&sni=qqqqqqqqqqa.www890604.dpdns.org#🇺🇸 US | 🟢 | trojan | @vpntrt | 2
 trojan://t2WqbIW2JE@15.204.175.111:2083?security=tls&sni=usa-vp-111.mETIkaPPs.cOm&type=ws&host=usa-vp-111.mETIkaPPs.cOm&path=/linkvws#🇺🇸 US | 🟢 | trojan | @webhube | 4
 trojan://ttfang@220.135.202.250:81?path=/&security=tls&host=ttfang.fange.me&type=ws&sni=ttfang.fange.me#🇹🇼 TW | 🟢 | trojan | @wxgmrjdcc | 17
 trojan://telegram-id-directvpn@13.39.209.28:22222?allowInsecure=1&sni=trojan.burgerip.co.uk#🇫🇷 FR | 🔴 | trojan | @yxjnode | 23

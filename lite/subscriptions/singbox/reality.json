@@ -107,14 +107,14 @@
                 "URL-TEST",
                 "🇩🇪 DE | 🟢 | vless | @bermudavpn24 | 2",
                 "❔ XX | 🟢 | vless | @catvpns | 10",
+                "🇳🇱 NL | 🟢 | vless | @config_proxy | 107",
                 "🇫🇷 FR | 🟢 | vless | @configasli | 6",
                 "❔ XX | 🟢 | vless | @custom_14 | 7",
                 "🇩🇪 DE | 🟢 | vless | @custom_config | 0",
                 "🇦🇪 AE | 🟢 | vless | @darkfiilter | 0",
                 "🇺🇦 UA | 🟢 | vless | @dashv2ray | 7",
                 "❔ XX | 🟢 | vless | @deli_servers | 1",
-                "🇺🇸 US | 🟢 | vless | @entrynet | 19",
-                "🇳🇱 NL | 🟢 | vless | @expressvpn_420 | 7",
+                "🇳🇱 NL | 🟢 | vless | @expressvpn_420 | 6",
                 "🇫🇮 FI | 🟢 | vless | @fastfreeconfig | 0",
                 "🇩🇪 DE | 🟢 | vless | @fastshovpn | 0",
                 "❔ XX | 🟢 | vless | @fire_vpn_channel | 0",
@@ -127,18 +127,17 @@
                 "❔ XX | 🟢 | vless | @fsv2ray | 3",
                 "🇩🇪 DE | 🟢 | vless | @goldenshiinevpn | 10",
                 "🇺🇸 US | 🟢 | vless | @happ_tm_official | 1",
-                "🇺🇸 US | 🟢 | vless | @hope_net | 18",
                 "🇩🇪 DE | 🟢 | vless | @hopev2ray | 4",
                 "🇩🇪 DE | 🟢 | vless | @imhdiyvp | 8",
                 "🇫🇷 FR | 🟢 | vless | @ip_ramzi | 10",
                 "🇫🇷 FR | 🟢 | vless | @ip_ramzi | 11",
+                "🇳🇱 NL | 🟢 | vless | @ipv2ray | 3",
                 "🇺🇸 US | 🟢 | vless | @ipv2rayng | 16",
                 "🇦🇪 AE | 🟢 | vless | @iran_access | 13",
                 "🇩🇪 DE | 🟢 | vless | @iranbaxvpn | 7",
                 "❔ XX | 🟢 | vless | @iseqaro | 4",
                 "❔ XX | 🟢 | vless | @itv2ray | 28",
                 "❔ XX | 🟢 | vless | @itv2ray | 29",
-                "❔ XX | 🟢 | vless | @jedal_vpn | 3",
                 "🇳🇱 NL | 🟢 | vless | @jokerrvpn | 0",
                 "🇬🇧 GB | 🟢 | vless | @jokerv2ray | 15",
                 "🇩🇪 DE | 🟢 | vless | @jokerv2ray | 16",
@@ -175,7 +174,6 @@
                 "🇩🇪 DE | 🟢 | vless | @v2ray_inter | 8",
                 "❔ XX | 🟢 | vless | @v2ray_melli | 4",
                 "🇨🇦 CA | 🟢 | vless | @v2ray_melli | 5",
-                "🇺🇸 US | 🟢 | vless | @v2raych | 19",
                 "🇪🇸 ES | 🟢 | vless | @v2rayexpress | 9",
                 "❔ XX | 🟢 | vless | @v2rayng_my2 | 1",
                 "🇩🇪 DE | 🟢 | vless | @v2rayngconfings | 16",
@@ -221,14 +219,14 @@
             "outbounds": [
                 "🇩🇪 DE | 🟢 | vless | @bermudavpn24 | 2",
                 "❔ XX | 🟢 | vless | @catvpns | 10",
+                "🇳🇱 NL | 🟢 | vless | @config_proxy | 107",
                 "🇫🇷 FR | 🟢 | vless | @configasli | 6",
                 "❔ XX | 🟢 | vless | @custom_14 | 7",
                 "🇩🇪 DE | 🟢 | vless | @custom_config | 0",
                 "🇦🇪 AE | 🟢 | vless | @darkfiilter | 0",
                 "🇺🇦 UA | 🟢 | vless | @dashv2ray | 7",
                 "❔ XX | 🟢 | vless | @deli_servers | 1",
-                "🇺🇸 US | 🟢 | vless | @entrynet | 19",
-                "🇳🇱 NL | 🟢 | vless | @expressvpn_420 | 7",
+                "🇳🇱 NL | 🟢 | vless | @expressvpn_420 | 6",
                 "🇫🇮 FI | 🟢 | vless | @fastfreeconfig | 0",
                 "🇩🇪 DE | 🟢 | vless | @fastshovpn | 0",
                 "❔ XX | 🟢 | vless | @fire_vpn_channel | 0",
@@ -241,18 +239,17 @@
                 "❔ XX | 🟢 | vless | @fsv2ray | 3",
                 "🇩🇪 DE | 🟢 | vless | @goldenshiinevpn | 10",
                 "🇺🇸 US | 🟢 | vless | @happ_tm_official | 1",
-                "🇺🇸 US | 🟢 | vless | @hope_net | 18",
                 "🇩🇪 DE | 🟢 | vless | @hopev2ray | 4",
                 "🇩🇪 DE | 🟢 | vless | @imhdiyvp | 8",
                 "🇫🇷 FR | 🟢 | vless | @ip_ramzi | 10",
                 "🇫🇷 FR | 🟢 | vless | @ip_ramzi | 11",
+                "🇳🇱 NL | 🟢 | vless | @ipv2ray | 3",
                 "🇺🇸 US | 🟢 | vless | @ipv2rayng | 16",
                 "🇦🇪 AE | 🟢 | vless | @iran_access | 13",
                 "🇩🇪 DE | 🟢 | vless | @iranbaxvpn | 7",
                 "❔ XX | 🟢 | vless | @iseqaro | 4",
                 "❔ XX | 🟢 | vless | @itv2ray | 28",
                 "❔ XX | 🟢 | vless | @itv2ray | 29",
-                "❔ XX | 🟢 | vless | @jedal_vpn | 3",
                 "🇳🇱 NL | 🟢 | vless | @jokerrvpn | 0",
                 "🇬🇧 GB | 🟢 | vless | @jokerv2ray | 15",
                 "🇩🇪 DE | 🟢 | vless | @jokerv2ray | 16",
@@ -289,7 +286,6 @@
                 "🇩🇪 DE | 🟢 | vless | @v2ray_inter | 8",
                 "❔ XX | 🟢 | vless | @v2ray_melli | 4",
                 "🇨🇦 CA | 🟢 | vless | @v2ray_melli | 5",
-                "🇺🇸 US | 🟢 | vless | @v2raych | 19",
                 "🇪🇸 ES | 🟢 | vless | @v2rayexpress | 9",
                 "❔ XX | 🟢 | vless | @v2rayng_my2 | 1",
                 "🇩🇪 DE | 🟢 | vless | @v2rayngconfings | 16",
@@ -396,6 +392,29 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@CatVpns@CatVpns@CatVpns@CatVpns@CatVpns@CatVpns@CatVpns@CatVpns@CatVpns@CatVpns@CatVpns@CatVpns@CatVpns@CatVpns"
+            }
+        },
+        {
+            "tag": "🇳🇱 NL | 🟢 | vless | @config_proxy | 107",
+            "type": "vless",
+            "server": "62.212.70.94",
+            "server_port": 2025,
+            "uuid": "d33b228d-654d-4dc2-a60e-16cbdd5b3e08",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "server_name": "tgju.org",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Q1a6ooyct6J0bZRpJD02S6PLMOl0HaLWT2ECyMAwQgw",
+                    "short_id": "e9"
+                }
             }
         },
         {
@@ -545,30 +564,7 @@
             }
         },
         {
-            "tag": "🇺🇸 US | 🟢 | vless | @entrynet | 19",
-            "type": "vless",
-            "server": "3.133.150.237",
-            "server_port": 4433,
-            "uuid": "7fc993f5-7cd7-4485-9e6f-1f7c5160c910",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "server_name": "stackoverflow.com",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "random"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "tZn5Tdrk045zSTbBEzGwSV_LOdCZqEwT8c85pJOK_C0",
-                    "short_id": "f785b38130e64177"
-                }
-            }
-        },
-        {
-            "tag": "🇳🇱 NL | 🟢 | vless | @expressvpn_420 | 7",
+            "tag": "🇳🇱 NL | 🟢 | vless | @expressvpn_420 | 6",
             "type": "vless",
             "server": "62.212.70.94",
             "server_port": 2025,
@@ -883,29 +879,6 @@
             }
         },
         {
-            "tag": "🇺🇸 US | 🟢 | vless | @hope_net | 18",
-            "type": "vless",
-            "server": "18.222.124.124",
-            "server_port": 4433,
-            "uuid": "7fc993f5-7cd7-4485-9e6f-1f7c5160c910",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "server_name": "stackoverflow.com",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "random"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "tZn5Tdrk045zSTbBEzGwSV_LOdCZqEwT8c85pJOK_C0",
-                    "short_id": "f785b38130e64177"
-                }
-            }
-        },
-        {
             "tag": "🇩🇪 DE | 🟢 | vless | @hopev2ray | 4",
             "type": "vless",
             "server": "91.107.167.104",
@@ -1003,6 +976,33 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "/@v2rayng12023/@v2rayng12023/@v2rayng12023/@v2rayng12023/@v2rayng12023"
+            }
+        },
+        {
+            "tag": "🇳🇱 NL | 🟢 | vless | @ipv2ray | 3",
+            "type": "vless",
+            "server": "95.164.17.75",
+            "server_port": 443,
+            "uuid": "a943a9e0-792e-4efe-af1e-54751a44fef8",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "server_name": "ftp.debian.org",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "pasVbAjcNpjQvgsHBN_WKxQPXwNdXsI4nXYC1usoV0s",
+                    "short_id": "df"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram-ipV2Ry-Telegram-ipV2Ry-Telegram-ipV2Ry"
             }
         },
         {
@@ -1147,29 +1147,6 @@
                 "reality": {
                     "enabled": true,
                     "public_key": "BK8bqxmSO3nF4r8wMDTJ7wl97UQ3uSVEw60cnPk7zW4",
-                    "short_id": ""
-                }
-            }
-        },
-        {
-            "tag": "❔ XX | 🟢 | vless | @jedal_vpn | 3",
-            "type": "vless",
-            "server": "sub1.nilovip.net.tr",
-            "server_port": 2053,
-            "uuid": "f76155f5-d17e-4b09-b762-3af09410c108",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "server_name": "speed.cloudflare.com",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "qy53GvnlUOQTQmMrqnXSwoZEgxMTW_HAA6Xhpqx9OU0",
                     "short_id": ""
                 }
             }
@@ -2043,29 +2020,6 @@
                     "enabled": true,
                     "public_key": "nzxEupJqZ3vDwqrV95RfHLKKJT8dCByBmBNwsbvHVyc",
                     "short_id": "e11e857b70"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸 US | 🟢 | vless | @v2raych | 19",
-            "type": "vless",
-            "server": "18.221.7.101",
-            "server_port": 4433,
-            "uuid": "7fc993f5-7cd7-4485-9e6f-1f7c5160c910",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "server_name": "stackoverflow.com",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "random"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "tZn5Tdrk045zSTbBEzGwSV_LOdCZqEwT8c85pJOK_C0",
-                    "short_id": "f785b38130e64177"
                 }
             }
         },

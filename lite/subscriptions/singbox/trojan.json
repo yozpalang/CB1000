@@ -112,6 +112,8 @@
                 "🇫🇷 FR | 🟢 | trojan | @directvpn | 15",
                 "🇸🇬 SG | 🟢 | trojan | @filter_breaker | 95",
                 "🇺🇸 US | 🟢 | trojan | @freevpnatm | 12",
+                "🇺🇸 US | 🟢 | trojan | @ip_cf_config | 12",
+                "a@104.18.26.90:443?path=/trUXByA1rnbs4YQ1Xw?ed=2560&security=tls&alpn=h3,h2,http/1.1&host=s1.mitivpn.workers.dev&fp=randomized&type=ws&sni=S1.mitivpN.wOrKeRS.DEV#🇺🇸 US | 🟢 | trojan | @ip_cf_config | 13",
                 "🇫🇷 FR | 🟢 | trojan | @jiedianf | 9",
                 "❔ XX | 🟢 | trojan | @maradona_vpn | 7",
                 "❔ XX | 🟢 | trojan | @maradona_vpn | 8",
@@ -130,7 +132,6 @@
                 "🇨🇭 CH | 🟢 | trojan | @v2rayo7ybv67i76 | 12",
                 "🇫🇷 FR | 🟢 | trojan | @v2rayvpnchannel | 14",
                 "🇫🇷 FR | 🟢 | trojan | @v2rayvpnchannel | 15",
-                "🇺🇸 US | 🟢 | trojan | @vpntrt | 2",
                 "🇺🇸 US | 🟢 | trojan | @webhube | 4",
                 "🇹🇼 TW | 🟢 | trojan | @wxgmrjdcc | 17",
                 "🇫🇷 FR | 🔴 | trojan | @yxjnode | 23"
@@ -147,6 +148,8 @@
                 "🇫🇷 FR | 🟢 | trojan | @directvpn | 15",
                 "🇸🇬 SG | 🟢 | trojan | @filter_breaker | 95",
                 "🇺🇸 US | 🟢 | trojan | @freevpnatm | 12",
+                "🇺🇸 US | 🟢 | trojan | @ip_cf_config | 12",
+                "a@104.18.26.90:443?path=/trUXByA1rnbs4YQ1Xw?ed=2560&security=tls&alpn=h3,h2,http/1.1&host=s1.mitivpn.workers.dev&fp=randomized&type=ws&sni=S1.mitivpN.wOrKeRS.DEV#🇺🇸 US | 🟢 | trojan | @ip_cf_config | 13",
                 "🇫🇷 FR | 🟢 | trojan | @jiedianf | 9",
                 "❔ XX | 🟢 | trojan | @maradona_vpn | 7",
                 "❔ XX | 🟢 | trojan | @maradona_vpn | 8",
@@ -165,7 +168,6 @@
                 "🇨🇭 CH | 🟢 | trojan | @v2rayo7ybv67i76 | 12",
                 "🇫🇷 FR | 🟢 | trojan | @v2rayvpnchannel | 14",
                 "🇫🇷 FR | 🟢 | trojan | @v2rayvpnchannel | 15",
-                "🇺🇸 US | 🟢 | trojan | @vpntrt | 2",
                 "🇺🇸 US | 🟢 | trojan | @webhube | 4",
                 "🇹🇼 TW | 🟢 | trojan | @wxgmrjdcc | 17",
                 "🇫🇷 FR | 🔴 | trojan | @yxjnode | 23"
@@ -322,6 +324,36 @@
                     "Host": "sdf.986986.shop"
                 }
             }
+        },
+        {
+            "tag": "🇺🇸 US | 🟢 | trojan | @ip_cf_config | 12",
+            "type": "trojan",
+            "server": "172.67.153.179",
+            "server_port": 443,
+            "password": "4174b95d-115e-4d39-add6-1f8db95bb860",
+            "tls": {
+                "enabled": true,
+                "server_name": "qqqqqqqqqqa.www890604.dpdns.org",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/uzJNzgkkYWRWGxgFnoFPw1",
+                "headers": {
+                    "Host": "qqqqqqqqqqa.www890604.dpdns.org"
+                }
+            }
+        },
+        {
+            "tag": "a@104.18.26.90:443?path=/trUXByA1rnbs4YQ1Xw?ed=2560&security=tls&alpn=h3,h2,http/1.1&host=s1.mitivpn.workers.dev&fp=randomized&type=ws&sni=S1.mitivpN.wOrKeRS.DEV#🇺🇸 US | 🟢 | trojan | @ip_cf_config | 13",
+            "type": "trojan",
+            "server": "Xa4^l(;.;B",
+            "server_port": 0,
+            "password": ""
         },
         {
             "tag": "🇫🇷 FR | 🟢 | trojan | @jiedianf | 9",
@@ -647,29 +679,6 @@
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸 US | 🟢 | trojan | @vpntrt | 2",
-            "type": "trojan",
-            "server": "172.67.153.179",
-            "server_port": 443,
-            "password": "4174b95d-115e-4d39-add6-1f8db95bb860",
-            "tls": {
-                "enabled": true,
-                "server_name": "qqqqqqqqqqa.www890604.dpdns.org",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "/uzJNzgkkYWRWGxgFnoFPw1",
-                "headers": {
-                    "Host": "qqqqqqqqqqa.www890604.dpdns.org"
                 }
             }
         },
