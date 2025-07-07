@@ -84,7 +84,7 @@ if (!is_dir(SUBS_DIR_BASE64)) {
 $filesWritten = 0;
 foreach ($sortedConfigs as $type => $configs) {
     // Combine the configs with the appropriate Hiddify header
-    $header = hiddifyHeader("TVC | " . strtoupper($type));
+    $header = hiddifyHeader("PSG | " . strtoupper($type));
     $plainTextContent = $header . implode(PHP_EOL, $configs);
     $base64Content = base64_encode($plainTextContent);
 
