@@ -123,7 +123,6 @@
                 "🇬🇧 GB | 🟢 | ss | @freeconfigsplus | 18",
                 "🇺🇸 US | 🟢 | ss | @freeiranianv2rey | 15",
                 "🇬🇧 GB | 🟢 | ss | @freeiranianv2rey | 16",
-                "🇩🇪 DE | 🟢 | ss | @freenettir | 18",
                 "🇳🇱 NL | 🟢 | ss | @freevirgoolnet | 6",
                 "🇫🇷 FR | 🟢 | ss | @freevirgoolnet | 7",
                 "🇬🇧 GB | 🟢 | ss | @injectormconf | 39",
@@ -167,6 +166,7 @@
                 "🇳🇱 NL | 🟢 | ss | @v222ray | 8",
                 "🇬🇧 GB | 🟢 | ss | @v2freenet | 18",
                 "🇩🇪 DE | 🟢 | ss | @v2freenet | 19",
+                "🇺🇸 US | 🟢 | ss | @v2ray_free_conf | 18",
                 "🇺🇸 US | 🟢 | ss | @v2ray_free_conf | 19",
                 "🇬🇧 GB | 🟢 | ss | @v2raybe | 6",
                 "🇬🇧 GB | 🟢 | ss | @v2raycrow | 0",
@@ -215,7 +215,6 @@
                 "🇬🇧 GB | 🟢 | ss | @freeconfigsplus | 18",
                 "🇺🇸 US | 🟢 | ss | @freeiranianv2rey | 15",
                 "🇬🇧 GB | 🟢 | ss | @freeiranianv2rey | 16",
-                "🇩🇪 DE | 🟢 | ss | @freenettir | 18",
                 "🇳🇱 NL | 🟢 | ss | @freevirgoolnet | 6",
                 "🇫🇷 FR | 🟢 | ss | @freevirgoolnet | 7",
                 "🇬🇧 GB | 🟢 | ss | @injectormconf | 39",
@@ -259,6 +258,7 @@
                 "🇳🇱 NL | 🟢 | ss | @v222ray | 8",
                 "🇬🇧 GB | 🟢 | ss | @v2freenet | 18",
                 "🇩🇪 DE | 🟢 | ss | @v2freenet | 19",
+                "🇺🇸 US | 🟢 | ss | @v2ray_free_conf | 18",
                 "🇺🇸 US | 🟢 | ss | @v2ray_free_conf | 19",
                 "🇬🇧 GB | 🟢 | ss | @v2raybe | 6",
                 "🇬🇧 GB | 🟢 | ss | @v2raycrow | 0",
@@ -447,14 +447,6 @@
             "server_port": 443,
             "method": "chacha20-ietf-poly1305",
             "password": "WstuSnlu4ieA9M0L"
-        },
-        {
-            "tag": "🇩🇪 DE | 🟢 | ss | @freenettir | 18",
-            "type": "shadowsocks",
-            "server": "h110vpnde.outlinekeys.net",
-            "server_port": 21712,
-            "method": "chacha20-ietf-poly1305",
-            "password": "hO6v6uqpQ15DHvIRa9T0x2"
         },
         {
             "tag": "🇳🇱 NL | 🟢 | ss | @freevirgoolnet | 6",
@@ -801,12 +793,20 @@
             "password": "AuirfT6Se/T5YFhqCNidSOfJc7g5y5DC+mDiIsNAYzI="
         },
         {
-            "tag": "🇺🇸 US | 🟢 | ss | @v2ray_free_conf | 19",
+            "tag": "🇺🇸 US | 🟢 | ss | @v2ray_free_conf | 18",
             "type": "shadowsocks",
             "server": "69.50.93.47",
             "server_port": 6379,
             "method": "aes-256-gcm",
             "password": "zDNVedRFPQexG9v"
+        },
+        {
+            "tag": "🇺🇸 US | 🟢 | ss | @v2ray_free_conf | 19",
+            "type": "shadowsocks",
+            "server": "67.220.95.102",
+            "server_port": 2375,
+            "method": "aes-256-gcm",
+            "password": "faBAoD54k87UJG7"
         },
         {
             "tag": "🇬🇧 GB | 🟢 | ss | @v2raybe | 6",

@@ -107,8 +107,8 @@
                 "URL-TEST",
                 "🇩🇪 DE | 🟢 | vless | @bermudavpn24 | 2",
                 "❔ XX | 🟢 | vless | @catvpns | 10",
-                "🇳🇱 NL | 🟢 | vless | @config_proxy | 107",
                 "🇫🇷 FR | 🟢 | vless | @configasli | 6",
+                "🇺🇸 US | 🟢 | vless | @configshubplus | 18",
                 "❔ XX | 🟢 | vless | @custom_14 | 7",
                 "🇩🇪 DE | 🟢 | vless | @custom_config | 0",
                 "🇦🇪 AE | 🟢 | vless | @darkfiilter | 0",
@@ -127,6 +127,7 @@
                 "❔ XX | 🟢 | vless | @fsv2ray | 3",
                 "🇩🇪 DE | 🟢 | vless | @goldenshiinevpn | 10",
                 "🇺🇸 US | 🟢 | vless | @happ_tm_official | 1",
+                "🇺🇸 US | 🟢 | vless | @hope_net | 18",
                 "🇩🇪 DE | 🟢 | vless | @hopev2ray | 4",
                 "🇩🇪 DE | 🟢 | vless | @imhdiyvp | 8",
                 "🇫🇷 FR | 🟢 | vless | @ip_ramzi | 10",
@@ -138,6 +139,7 @@
                 "❔ XX | 🟢 | vless | @iseqaro | 4",
                 "❔ XX | 🟢 | vless | @itv2ray | 28",
                 "❔ XX | 🟢 | vless | @itv2ray | 29",
+                "❔ XX | 🟢 | vless | @jedal_vpn | 3",
                 "🇳🇱 NL | 🟢 | vless | @jokerrvpn | 0",
                 "🇬🇧 GB | 🟢 | vless | @jokerv2ray | 15",
                 "🇩🇪 DE | 🟢 | vless | @jokerv2ray | 16",
@@ -201,7 +203,7 @@
                 "🇩🇪 DE | 🟢 | vless | @vpnkafing | 1",
                 "🇹🇷 TR | 🟢 | vless | @vpnod | 9",
                 "🇺🇸 US | 🟢 | vless | @vpnservergprc | 3",
-                "🇨🇦 CA | 🟢 | vless | @vpnstable | 18",
+                "🇫🇮 FI | 🟢 | vless | @vpnstable | 19",
                 "🇫🇮 FI | 🟢 | vless | @vpnstorefast | 15",
                 "🇩🇪 DE | 🟢 | vless | @vpnvg | 14",
                 "❔ XX | 🟢 | vless | @vpnwlf | 10",
@@ -219,8 +221,8 @@
             "outbounds": [
                 "🇩🇪 DE | 🟢 | vless | @bermudavpn24 | 2",
                 "❔ XX | 🟢 | vless | @catvpns | 10",
-                "🇳🇱 NL | 🟢 | vless | @config_proxy | 107",
                 "🇫🇷 FR | 🟢 | vless | @configasli | 6",
+                "🇺🇸 US | 🟢 | vless | @configshubplus | 18",
                 "❔ XX | 🟢 | vless | @custom_14 | 7",
                 "🇩🇪 DE | 🟢 | vless | @custom_config | 0",
                 "🇦🇪 AE | 🟢 | vless | @darkfiilter | 0",
@@ -239,6 +241,7 @@
                 "❔ XX | 🟢 | vless | @fsv2ray | 3",
                 "🇩🇪 DE | 🟢 | vless | @goldenshiinevpn | 10",
                 "🇺🇸 US | 🟢 | vless | @happ_tm_official | 1",
+                "🇺🇸 US | 🟢 | vless | @hope_net | 18",
                 "🇩🇪 DE | 🟢 | vless | @hopev2ray | 4",
                 "🇩🇪 DE | 🟢 | vless | @imhdiyvp | 8",
                 "🇫🇷 FR | 🟢 | vless | @ip_ramzi | 10",
@@ -250,6 +253,7 @@
                 "❔ XX | 🟢 | vless | @iseqaro | 4",
                 "❔ XX | 🟢 | vless | @itv2ray | 28",
                 "❔ XX | 🟢 | vless | @itv2ray | 29",
+                "❔ XX | 🟢 | vless | @jedal_vpn | 3",
                 "🇳🇱 NL | 🟢 | vless | @jokerrvpn | 0",
                 "🇬🇧 GB | 🟢 | vless | @jokerv2ray | 15",
                 "🇩🇪 DE | 🟢 | vless | @jokerv2ray | 16",
@@ -313,7 +317,7 @@
                 "🇩🇪 DE | 🟢 | vless | @vpnkafing | 1",
                 "🇹🇷 TR | 🟢 | vless | @vpnod | 9",
                 "🇺🇸 US | 🟢 | vless | @vpnservergprc | 3",
-                "🇨🇦 CA | 🟢 | vless | @vpnstable | 18",
+                "🇫🇮 FI | 🟢 | vless | @vpnstable | 19",
                 "🇫🇮 FI | 🟢 | vless | @vpnstorefast | 15",
                 "🇩🇪 DE | 🟢 | vless | @vpnvg | 14",
                 "❔ XX | 🟢 | vless | @vpnwlf | 10",
@@ -395,29 +399,6 @@
             }
         },
         {
-            "tag": "🇳🇱 NL | 🟢 | vless | @config_proxy | 107",
-            "type": "vless",
-            "server": "62.212.70.94",
-            "server_port": 2025,
-            "uuid": "d33b228d-654d-4dc2-a60e-16cbdd5b3e08",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "tls": {
-                "enabled": true,
-                "server_name": "tgju.org",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "Q1a6ooyct6J0bZRpJD02S6PLMOl0HaLWT2ECyMAwQgw",
-                    "short_id": "e9"
-                }
-            }
-        },
-        {
             "tag": "🇫🇷 FR | 🟢 | vless | @configasli | 6",
             "type": "vless",
             "server": "172.232.33.18",
@@ -437,6 +418,29 @@
                     "enabled": true,
                     "public_key": "PTlW40u-tHGDlObhSKFN4tntrfHLgNPlHqg1oYqyY1o",
                     "short_id": "b5ecd44d"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸 US | 🟢 | vless | @configshubplus | 18",
+            "type": "vless",
+            "server": "34.218.205.253",
+            "server_port": 4433,
+            "uuid": "7fc993f5-7cd7-4485-9e6f-1f7c5160c910",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "server_name": "stackoverflow.com",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "tZn5Tdrk045zSTbBEzGwSV_LOdCZqEwT8c85pJOK_C0",
+                    "short_id": "f785b38130e64177"
                 }
             }
         },
@@ -879,6 +883,29 @@
             }
         },
         {
+            "tag": "🇺🇸 US | 🟢 | vless | @hope_net | 18",
+            "type": "vless",
+            "server": "3.144.179.81",
+            "server_port": 4433,
+            "uuid": "7fc993f5-7cd7-4485-9e6f-1f7c5160c910",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "server_name": "stackoverflow.com",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "tZn5Tdrk045zSTbBEzGwSV_LOdCZqEwT8c85pJOK_C0",
+                    "short_id": "f785b38130e64177"
+                }
+            }
+        },
+        {
             "tag": "🇩🇪 DE | 🟢 | vless | @hopev2ray | 4",
             "type": "vless",
             "server": "91.107.167.104",
@@ -1147,6 +1174,29 @@
                 "reality": {
                     "enabled": true,
                     "public_key": "BK8bqxmSO3nF4r8wMDTJ7wl97UQ3uSVEw60cnPk7zW4",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "❔ XX | 🟢 | vless | @jedal_vpn | 3",
+            "type": "vless",
+            "server": "sub1.nilovip.net.tr",
+            "server_port": 2053,
+            "uuid": "f76155f5-d17e-4b09-b762-3af09410c108",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "server_name": "speed.cloudflare.com",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "qy53GvnlUOQTQmMrqnXSwoZEgxMTW_HAA6Xhpqx9OU0",
                     "short_id": ""
                 }
             }
@@ -2696,16 +2746,16 @@
             }
         },
         {
-            "tag": "🇨🇦 CA | 🟢 | vless | @vpnstable | 18",
+            "tag": "🇫🇮 FI | 🟢 | vless | @vpnstable | 19",
             "type": "vless",
-            "server": "148.113.174.213",
-            "server_port": 28495,
-            "uuid": "7e296434-2d17-48d3-928d-19eaa34aecb1",
+            "server": "92.60.78.221",
+            "server_port": 443,
+            "uuid": "6897c181-24b1-4880-8660-e6c5c7ee13c7",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "tls": {
                 "enabled": true,
-                "server_name": "dl.google.com",
+                "server_name": "www.tradingview.com",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
@@ -2713,8 +2763,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "KXMH8QzaRa66F6GxOR1CanBunO2uHdJvri2zCbar2RQ",
-                    "short_id": "0ecc2c1392"
+                    "public_key": "pkIWxbuPAasjatPaHnAaTnCxVj1RkDFsJEWpLUTOcWY",
+                    "short_id": "9917d2350096"
                 }
             }
         },

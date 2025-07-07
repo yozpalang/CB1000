@@ -136,11 +136,12 @@
                 "🇺🇸 US | 🔴 | vmess | @freev2rays | 19",
                 "🇩🇪 DE | 🔴 | vmess | @freevmess | 3",
                 "🇩🇪 DE | 🔴 | vmess | @freevmess | 4",
-                "🏳️  | 🔴 | vmess | @hope_net | 19",
+                "🇺🇸 US | 🔴 | vmess | @ip_cf_config | 13",
                 "🇫🇷 FR | 🔴 | vmess | @ir_netproxy | 13",
                 "🇺🇸 US | 🟢 | vmess | @iran_mehr_vpn | 16",
                 "🇺🇸 US | 🔴 | vmess | @iran_mehr_vpn | 17",
                 "🇺🇸 US | 🟢 | vmess | @iranvpnet | 0",
+                "❔ XX | 🔴 | vmess | @jedal_vpn | 4",
                 "🇮🇷 IR | 🔴 | vmess | @jetupnet | 1",
                 "❔ XX | 🔴 | vmess | @khoneproxy | 13",
                 "🇬🇧 GB | 🔴 | vmess | @khoneproxy | 14",
@@ -196,7 +197,6 @@
                 "❔ XX | 🟢 | vmess | @v2ray4win | 6",
                 "🇩🇪 DE | 🔴 | vmess | @v2ray4win | 7",
                 "🇺🇸 US | 🟢 | vmess | @v2ray_fd | 0",
-                "❔ XX | 🔴 | vmess | @v2ray_free_conf | 18",
                 "❔ XX | 🔴 | vmess | @v2ray_n | 18",
                 "❔ XX | 🔴 | vmess | @v2ray_n | 19",
                 "🇳🇱 NL | 🔴 | vmess | @v2rayfast_7 | 2",
@@ -221,7 +221,6 @@
                 "🇮🇷 IR | 🔴 | vmess | @vistav2ray | 14",
                 "🇫🇷 FR | 🟢 | vmess | @vpn_kade01 | 8",
                 "🇫🇮 FI | 🔴 | vmess | @vpneti | 9",
-                "🇷🇴 RO | 🔴 | vmess | @vpnfail_v2ray | 18",
                 "🇩🇪 DE | 🟢 | vmess | @vpnfail_v2ray | 19",
                 "🇺🇸 US | 🔴 | vmess | @vpngate_config | 18",
                 "🇨🇾 CY | 🟢 | vmess | @vpnsupportfast | 26",
@@ -273,11 +272,12 @@
                 "🇺🇸 US | 🔴 | vmess | @freev2rays | 19",
                 "🇩🇪 DE | 🔴 | vmess | @freevmess | 3",
                 "🇩🇪 DE | 🔴 | vmess | @freevmess | 4",
-                "🏳️  | 🔴 | vmess | @hope_net | 19",
+                "🇺🇸 US | 🔴 | vmess | @ip_cf_config | 13",
                 "🇫🇷 FR | 🔴 | vmess | @ir_netproxy | 13",
                 "🇺🇸 US | 🟢 | vmess | @iran_mehr_vpn | 16",
                 "🇺🇸 US | 🔴 | vmess | @iran_mehr_vpn | 17",
                 "🇺🇸 US | 🟢 | vmess | @iranvpnet | 0",
+                "❔ XX | 🔴 | vmess | @jedal_vpn | 4",
                 "🇮🇷 IR | 🔴 | vmess | @jetupnet | 1",
                 "❔ XX | 🔴 | vmess | @khoneproxy | 13",
                 "🇬🇧 GB | 🔴 | vmess | @khoneproxy | 14",
@@ -333,7 +333,6 @@
                 "❔ XX | 🟢 | vmess | @v2ray4win | 6",
                 "🇩🇪 DE | 🔴 | vmess | @v2ray4win | 7",
                 "🇺🇸 US | 🟢 | vmess | @v2ray_fd | 0",
-                "❔ XX | 🔴 | vmess | @v2ray_free_conf | 18",
                 "❔ XX | 🔴 | vmess | @v2ray_n | 18",
                 "❔ XX | 🔴 | vmess | @v2ray_n | 19",
                 "🇳🇱 NL | 🔴 | vmess | @v2rayfast_7 | 2",
@@ -358,7 +357,6 @@
                 "🇮🇷 IR | 🔴 | vmess | @vistav2ray | 14",
                 "🇫🇷 FR | 🟢 | vmess | @vpn_kade01 | 8",
                 "🇫🇮 FI | 🔴 | vmess | @vpneti | 9",
-                "🇷🇴 RO | 🔴 | vmess | @vpnfail_v2ray | 18",
                 "🇩🇪 DE | 🟢 | vmess | @vpnfail_v2ray | 19",
                 "🇺🇸 US | 🔴 | vmess | @vpngate_config | 18",
                 "🇨🇾 CY | 🟢 | vmess | @vpnsupportfast | 26",
@@ -869,13 +867,20 @@
             }
         },
         {
-            "tag": "🏳️  | 🔴 | vmess | @hope_net | 19",
+            "tag": "🇺🇸 US | 🔴 | vmess | @ip_cf_config | 13",
             "type": "vmess",
-            "server": "127.0.0.1",
+            "server": "npmjs.com",
             "server_port": 8080,
-            "uuid": "bcaacba-acab-baca-dabc-bcacabcacbab",
+            "uuid": "spcmpkl14a",
             "security": "auto",
-            "alter_id": 0
+            "alter_id": 0,
+            "transport": {
+                "type": "ws",
+                "path": "/hetzner/cdn",
+                "headers": {
+                    "Host": ""
+                }
+            }
         },
         {
             "tag": "🇫🇷 FR | 🔴 | vmess | @ir_netproxy | 13",
@@ -935,6 +940,22 @@
                 "path": "/aveiror.com:443/linkvws",
                 "headers": {
                     "Host": "mute-math-d64e.0e503992ad7026.woRKERS.DeV"
+                }
+            }
+        },
+        {
+            "tag": "❔ XX | 🔴 | vmess | @jedal_vpn | 4",
+            "type": "vmess",
+            "server": "ge-6.jedalvip.site",
+            "server_port": 17305,
+            "uuid": "6546c678-3f22-4a32-899b-84035ce40199",
+            "security": "auto",
+            "alter_id": 0,
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": ""
                 }
             }
         },
@@ -1764,15 +1785,6 @@
             }
         },
         {
-            "tag": "❔ XX | 🔴 | vmess | @v2ray_free_conf | 18",
-            "type": "vmess",
-            "server": "haa.dashuai.cyou",
-            "server_port": 45052,
-            "uuid": "e9a98737-3df9-4bc3-a30c-77c978b071e2",
-            "security": "auto",
-            "alter_id": 0
-        },
-        {
             "tag": "❔ XX | 🔴 | vmess | @v2ray_n | 18",
             "type": "vmess",
             "server": "zeros.oxnetch-zz1.cf",
@@ -2120,25 +2132,16 @@
             "alter_id": 0
         },
         {
-            "tag": "🇷🇴 RO | 🔴 | vmess | @vpnfail_v2ray | 18",
-            "type": "vmess",
-            "server": "5.182.37.231",
-            "server_port": 49664,
-            "uuid": "9395474c-e2a1-4565-ba56-c16e7373c4c4",
-            "security": "auto",
-            "alter_id": 0
-        },
-        {
             "tag": "🇩🇪 DE | 🟢 | vmess | @vpnfail_v2ray | 19",
             "type": "vmess",
-            "server": "57.129.24.124",
+            "server": "57.129.28.65",
             "server_port": 443,
             "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "tls": {
                 "enabled": true,
-                "server_name": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "server_name": "kapelleng.com",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
@@ -2149,7 +2152,7 @@
                 "type": "ws",
                 "path": "/linkvws",
                 "headers": {
-                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+                    "Host": "kapelleng.com"
                 }
             }
         },
