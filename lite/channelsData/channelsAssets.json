@@ -719,8 +719,8 @@
     },
     "configshubplus": {
         "types": [
-            "vmess",
             "vless",
+            "trojan",
             "ss"
         ],
         "title": "𝘾𝙤𝙣𝙛𝙞𝙜𝙨𝙃𝙪𝙗🔮",
@@ -2126,9 +2126,12 @@
         "logo": "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/hoomaanbeats.jpg"
     },
     "hooshemasnui": {
-        "types": [],
-        "title": "Unknown Title",
-        "logo": ""
+        "types": [
+            "vless",
+            "ss"
+        ],
+        "title": "هوش مصنوعی | Ai | تکنولوژی",
+        "logo": "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/hooshemasnui.jpg"
     },
     "hope_net": {
         "types": [
@@ -3951,7 +3954,6 @@
     },
     "proxy_mtproto_vpns_free": {
         "types": [
-            "vmess",
             "vless",
             "ss"
         ],
@@ -5384,10 +5386,7 @@
         "logo": ""
     },
     "v2ray_cartel": {
-        "types": [
-            "vless",
-            "ss"
-        ],
+        "types": [],
         "title": "V2ray Cartel | Vpn | Free | Proxy | سرور رایگان | کانفیگ | پروکسی",
         "logo": "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/v2ray_cartel.jpg"
     },
@@ -5706,6 +5705,7 @@
     },
     "v2raych": {
         "types": [
+            "vmess",
             "vless",
             "trojan",
             "ss"
@@ -5780,7 +5780,6 @@
     },
     "v2rayfree": {
         "types": [
-            "vmess",
             "vless",
             "ss"
         ],
