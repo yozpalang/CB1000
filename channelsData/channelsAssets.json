@@ -135,8 +135,8 @@
     },
     "apexqr": {
         "types": [],
-        "title": "Unknown Title",
-        "logo": ""
+        "title": "P𝚒𝚡𝚎𝚕 ¦ پیکسل",
+        "logo": "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/apexqr.jpg"
     },
     "apple_x1": {
         "types": [],
@@ -691,8 +691,8 @@
     },
     "configpluse": {
         "types": [],
-        "title": "Unknown Title",
-        "logo": ""
+        "title": "کانفیگ پلاس",
+        "logo": "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/configpluse.jpg"
     },
     "configpositive": {
         "types": [],
@@ -1070,8 +1070,8 @@
     },
     "dextoken_10x": {
         "types": [],
-        "title": "Unknown Title",
-        "logo": ""
+        "title": "درآمد دلاری | سریع💎💸",
+        "logo": "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/dextoken_10x.jpg"
     },
     "dgkbza": {
         "types": [
@@ -1170,7 +1170,6 @@
     },
     "entrynet": {
         "types": [
-            "vmess",
             "vless",
             "trojan",
             "ss"
@@ -1565,8 +1564,8 @@
     },
     "free_v2rayyy": {
         "types": [],
-        "title": "Unknown Title",
-        "logo": ""
+        "title": "8:49 ᴾᴹ",
+        "logo": "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/free_v2rayyy.jpg"
     },
     "free_vip3": {
         "types": [
@@ -4064,8 +4063,8 @@
     },
     "proxymeli00": {
         "types": [],
-        "title": "Unknown Title",
-        "logo": ""
+        "title": "Telegram: Contact @proxymeli00",
+        "logo": "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/proxymeli00.jpg"
     },
     "proxymy2": {
         "types": [],
@@ -5567,9 +5566,14 @@
         "logo": "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/v2ray_swhil.jpg"
     },
     "v2ray_team": {
-        "types": [],
-        "title": "Unknown Title",
-        "logo": ""
+        "types": [
+            "vmess",
+            "vless",
+            "trojan",
+            "ss"
+        ],
+        "title": "وی پی ان - پروکسی | V2ray Team",
+        "logo": "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/v2ray_team.jpg"
     },
     "v2ray_txshop": {
         "types": [],
@@ -5691,7 +5695,6 @@
     "v2raych": {
         "types": [
             "vless",
-            "trojan",
             "ss"
         ],
         "title": "V2rayChallenge: V2RAY VPN Configs &amp; MTProto Proxies Free | پروکسی وی پی ان VPN رایگان وی تو ری چالش",
@@ -5785,8 +5788,8 @@
     },
     "v2rayiman": {
         "types": [],
-        "title": "Unknown Title",
-        "logo": ""
+        "title": "Telegram: Contact @v2rayiman",
+        "logo": "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/v2rayiman.jpg"
     },
     "v2raying": {
         "types": [
@@ -6394,7 +6397,6 @@
     "v2rayweb": {
         "types": [
             "vless",
-            "trojan",
             "ss"
         ],
         "title": "V2ray | VPN",
@@ -6546,6 +6548,7 @@
     "v2source": {
         "types": [
             "vless",
+            "trojan",
             "ss"
         ],
         "title": "Free V2ray",
@@ -7701,9 +7704,14 @@
         "logo": "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/wedbaztel.jpg"
     },
     "wedbazvpn": {
-        "types": [],
-        "title": "Unknown Title",
-        "logo": ""
+        "types": [
+            "vmess",
+            "vless",
+            "trojan",
+            "ss"
+        ],
+        "title": "WedBaZ",
+        "logo": "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/wedbazvpn.jpg"
     },
     "weedhast": {
         "types": [],
