@@ -21,7 +21,7 @@ const INPUT_FILE = __DIR__ . '/channelsAssets.json';
 const FINAL_DIR = __DIR__ . '/channelsData';
 const TEMP_DIR = __DIR__ . '/channelsData_temp'; // Temporary directory for atomic writes
 const LOGOS_DIR_NAME = 'logos'; // The name of the subdirectory for logos
-const GITHUB_LOGO_BASE_URL = 'https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos';
+const GITHUB_LOGO_BASE_URL = 'https://raw.githubusercontent.com/itsyebekhe/PSG/main/channelsData/logos';
 
 // --- 1. Initial Checks and Setup ---
 
