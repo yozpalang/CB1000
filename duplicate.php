@@ -160,7 +160,7 @@ echo "4. Writing all output files..." . PHP_EOL;
 file_put_contents(CONFIG_FILE, implode(PHP_EOL, $finalOutput));
 
 // Prepare Hiddify subscription files
-$hiddifyContent = hiddifyHeader("TVC | MIX") . implode(PHP_EOL, $finalOutput);
+$hiddifyContent = hiddifyHeader("PSG | MIX") . implode(PHP_EOL, $finalOutput);
 $hiddifyBase64Content = base64_encode($hiddifyContent);
 
 // Ensure subscription directories exist
