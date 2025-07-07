@@ -2,75 +2,77 @@
 
 declare(strict_types=1);
 
-// Enable error reporting for debugging
+/**
+ * Stage 2: Config Extractor
+ * - Reads channel data and cached HTML from Stage 1.
+ * - Extracts proxy configs from the cached HTML files.
+ * - Processes, enriches, and saves the final subscription files.
+ */
+
+// --- Setup ---
 ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 
-// It's crucial that the optimized functions.php from the previous answer is used.
 require 'functions.php';
 
 // --- Configuration Constants ---
-const API_URL = __DIR__ . '/channelsData/channelsAssets.json';
+const ASSETS_FILE = __DIR__ . '/channelsData/channelsAssets.json';
+const HTML_CACHE_DIR = __DIR__ . '/channelsData/html_cache';
 const OUTPUT_DIR = __DIR__ . '/subscriptions';
 const LOCATION_DIR = OUTPUT_DIR . '/location';
 const FINAL_CONFIG_FILE = __DIR__ . '/config.txt';
-const MAX_PAGES_TO_FETCH = 5; // How many pages to scrape per channel.
-const CONFIGS_TO_PROCESS_PER_SOURCE = 40; // Process the latest 40 configs from each source
 
-// --- Main Script Logic ---
+// --- 1. Load Source Data and Sanity Check ---
 
-echo "1. Fetching source list from API..." . PHP_EOL;
-$sourcesJson = @file_get_contents(API_URL);
-if ($sourcesJson === false) {
-    die("Error: Could not fetch the source list from " . API_URL . PHP_EOL);
+echo "--- STAGE 2: CONFIG EXTRACTOR ---" . PHP_EOL;
+echo "1. Loading source list from assets file..." . PHP_EOL;
+
+if (!file_exists(ASSETS_FILE)) {
+    die("Error: channelsAssets.json not found. Please run the assets script first." . PHP_EOL);
 }
-$sourcesArray = json_decode($sourcesJson, true);
+if (!is_dir(HTML_CACHE_DIR)) {
+    die("Error: HTML cache directory not found. Please run the assets script first." . PHP_EOL);
+}
+
+$sourcesArray = json_decode(file_get_contents(ASSETS_FILE), true);
 if (json_last_error() !== JSON_ERROR_NONE) {
-    die("Error: Invalid JSON received from source API." . PHP_EOL);
+    die("Error: Invalid JSON in assets file." . PHP_EOL);
 }
 
-echo "2. Fetching all channel data in parallel..." . PHP_EOL;
-$urls_to_fetch = [];
-foreach ($sourcesArray as $source => $data) {
-    $urls_to_fetch[$source] = "https://t.me/s/" . $source;
-}
-$fetched_data = fetch_multiple_urls_parallel($urls_to_fetch);
+// --- 2. Extract Configs from Cached HTML Files ---
 
-echo "\n2. Fetching and paginating channel data..." . PHP_EOL;
+echo "2. Extracting configs from local HTML cache..." . PHP_EOL;
 $configsList = [];
 $totalSources = count($sourcesArray);
 $sourceCounter = 0;
 
 foreach ($sourcesArray as $source => $sourceData) {
-    $sourceCounter++;
-    echo "\nProcessing source {$sourceCounter}/{$totalSources}: {$source}" . PHP_EOL;
-    $channelHtml = fetch_channel_data_paginated($source, MAX_PAGES_TO_FETCH);
+    print_progress(++$sourceCounter, $totalSources, 'Extracting:');
     
-    if (empty($channelHtml)) {
-        echo " -> No content fetched. Skipping." . PHP_EOL;
+    $htmlFile = HTML_CACHE_DIR . '/' . $source . '.html';
+    if (!file_exists($htmlFile)) {
+        continue; // Skip if no cached HTML exists for this source
+    }
+
+    $htmlContent = file_get_contents($htmlFile);
+    if (empty($htmlContent)) {
         continue;
     }
+
     $types = $sourceData['types'] ?? [];
     if (empty($types)) {
-        echo " -> No types defined. Skipping." . PHP_EOL;
         continue;
     }
 
     $typePattern = implode('|', array_map('preg_quote', $types, ['/']));
-    $tempExtract = extractLinksByType($channelHtml, $typePattern);
+    $extractedLinks = extractLinksByType($htmlContent, $typePattern);
 
-    if (!empty($tempExtract)) {
-        // Remove duplicate links that may appear across pages
-        $uniqueLinks = array_unique($tempExtract);
-        $configsList[$source] = array_values($uniqueLinks);
-        echo " -> Found " . count($uniqueLinks) . " unique configs." . PHP_EOL;
-    } else {
-        echo " -> No configs found." . PHP_EOL;
+    if (!empty($extractedLinks)) {
+        $configsList[$source] = array_values(array_unique($extractedLinks));
     }
 }
 echo PHP_EOL . "Extraction complete. Found configs from " . count($configsList) . " sources." . PHP_EOL;
-
 
 echo "4. Processing and enriching all configs..." . PHP_EOL;
 
