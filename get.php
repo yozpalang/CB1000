@@ -15,11 +15,8 @@ const API_URL = __DIR__ . '/channelsData/channelsAssets.json';
 const OUTPUT_DIR = __DIR__ . '/subscriptions';
 const LOCATION_DIR = OUTPUT_DIR . '/location';
 const FINAL_CONFIG_FILE = __DIR__ . '/config.txt';
+const MAX_PAGES_TO_FETCH = 5; // How many pages to scrape per channel.
 const CONFIGS_TO_PROCESS_PER_SOURCE = 40; // Process the latest 40 configs from each source
-
-// --- Helper Functions ---
-
-
 
 // --- Main Script Logic ---
 
@@ -40,22 +37,36 @@ foreach ($sourcesArray as $source => $data) {
 }
 $fetched_data = fetch_multiple_urls_parallel($urls_to_fetch);
 
-echo "\n3. Extracting configs from fetched data..." . PHP_EOL;
+echo "\n2. Fetching and paginating channel data..." . PHP_EOL;
 $configsList = [];
 $totalSources = count($sourcesArray);
-$tempCounter = 0;
-foreach ($sourcesArray as $source => $data) {
-    print_progress(++$tempCounter, $totalSources, 'Extracting:');
-    if (isset($fetched_data[$source])) {
-        $types = $data['types'] ?? [];
-        if (empty($types)) {
-            continue;
-        }
-        $typePattern = implode('|', array_map('preg_quote', $types, ['/']));
-        $tempExtract = extractLinksByType($fetched_data[$source], $typePattern);
-        if (!empty($tempExtract)) {
-            $configsList[$source] = $tempExtract;
-        }
+$sourceCounter = 0;
+
+foreach ($sourcesArray as $source => $sourceData) {
+    $sourceCounter++;
+    echo "\nProcessing source {$sourceCounter}/{$totalSources}: {$source}" . PHP_EOL;
+    $channelHtml = fetch_channel_data_paginated($source, MAX_PAGES_TO_FETCH);
+    
+    if (empty($channelHtml)) {
+        echo " -> No content fetched. Skipping." . PHP_EOL;
+        continue;
+    }
+    $types = $sourceData['types'] ?? [];
+    if (empty($types)) {
+        echo " -> No types defined. Skipping." . PHP_EOL;
+        continue;
+    }
+
+    $typePattern = implode('|', array_map('preg_quote', $types, ['/']));
+    $tempExtract = extractLinksByType($channelHtml, $typePattern);
+
+    if (!empty($tempExtract)) {
+        // Remove duplicate links that may appear across pages
+        $uniqueLinks = array_unique($tempExtract);
+        $configsList[$source] = array_values($uniqueLinks);
+        echo " -> Found " . count($uniqueLinks) . " unique configs." . PHP_EOL;
+    } else {
+        echo " -> No configs found." . PHP_EOL;
     }
 }
 echo PHP_EOL . "Extraction complete. Found configs from " . count($configsList) . " sources." . PHP_EOL;
