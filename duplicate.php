@@ -125,16 +125,25 @@ foreach ($uniqueConfigs as $bareConfig => $originalName) {
 
     $finalOutput[] = $finalConfig;
 
-    // --- Prepare data for the JSON API ---
+    // Split the name string by the pipe character
     $nameParts = explode('|', $originalName);
     
-    // Safely extract channel username
-    // The name format is: Flag Location | Status | Type | @Source | Key
-    $sourceUsername = 'unknown';
-    if (isset($nameParts[4])) {
-        $sourceUsername = trim(str_replace('@', '', $nameParts[4]));
+    // Safely extract channel username. The format is:
+    // [0] Flag + Location
+    // [1] Status Icon
+    // [2] Type
+    // [3] @Source
+    // [4] Key
+    // We trim each part to remove leading/trailing spaces.
+    $sourceUsername = 'unknown'; // Default value
+    if (isset($nameParts[3])) {
+        // Get the part containing the username (e.g., " @abiidar_server ")
+        $usernamePart = trim($nameParts[3]);
+        // Remove the leading '@' symbol
+        $sourceUsername = ltrim($usernamePart, '@');
     }
     
+    // Retrieve channel info using the corrected username, with a fallback.
     $channelInfo = $channelsAssets[$sourceUsername] ?? ['title' => 'Unknown Channel', 'logo' => ''];
 
     // Determine if the config is of type 'reality'
