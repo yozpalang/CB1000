@@ -33,20 +33,6 @@ const ALL_POSSIBLE_TYPES = [
 // Helper Functions (assuming fetch_multiple_urls_parallel and deleteFolder are in functions.php)
 // #############################################################################
 
-/**
- * A helper function to print a clean, overwriting progress bar.
- */
-function print_progress(int $current, int $total, string $message = ''): void
-{
-    if ($total == 0) return;
-    $percentage = ($current / $total) * 100;
-    $bar_length = 50;
-    $filled_length = (int)($bar_length * $current / $total);
-    $bar = str_repeat('=', $filled_length) . str_repeat(' ', $bar_length - $filled_length);
-    printf("\r%s [%s] %d%% (%d/%d)", $message, $bar, $percentage, $current, $total);
-}
-
-
 // --- 1. Initial Checks and Setup ---
 
 echo "1. Initializing and loading source data..." . PHP_EOL;
