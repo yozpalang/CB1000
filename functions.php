@@ -693,3 +693,21 @@ class ConfigWrapper
         return $this->decoded['params'][$key] ?? $default;
     }
 }
+
+/**
+ * Validates if a string is a valid Version 4 UUID.
+ *
+ * @param string|null $uuid The string to check.
+ * @return bool True if valid, false otherwise.
+ */
+function is_valid_uuid(?string $uuid): bool
+{
+    if ($uuid === null) {
+        return false;
+    }
+    
+    // This regex is a standard and reliable pattern for V4 UUIDs.
+    $pattern = '/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i';
+    
+    return (bool) preg_match($pattern, $uuid);
+}
