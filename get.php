@@ -45,9 +45,12 @@ $configsList = [];
 $totalSources = count($sourcesArray);
 $tempCounter = 0;
 foreach ($sourcesArray as $source => $data) {
-    $types = $data['types'];
     print_progress(++$tempCounter, $totalSources, 'Extracting:');
     if (isset($fetched_data[$source])) {
+        $types = $data['types'] ?? [];
+        if (empty($types)) {
+            continue;
+        }
         $typePattern = implode('|', array_map('preg_quote', $types, ['/']));
         $tempExtract = extractLinksByType($fetched_data[$source], $typePattern);
         if (!empty($tempExtract)) {
