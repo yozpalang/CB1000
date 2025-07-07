@@ -523,15 +523,20 @@ function fetch_multiple_urls_parallel(array $urls): array
     $handles = [];
     $results = [];
 
+    // Quietly return if there are no URLs to process.
+    if (empty($urls)) {
+        return [];
+    }
+
     foreach ($urls as $key => $url) {
         $ch = curl_init($url);
         curl_setopt_array($ch, [
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_FOLLOWLOCATION => true,
             CURLOPT_MAXREDIRS => 5,
-            CURLOPT_TIMEOUT => 15, // 15-second timeout per request
+            CURLOPT_TIMEOUT => 20, // Increased timeout slightly for potentially slow pages
             CURLOPT_USERAGENT => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36',
-            CURLOPT_SSL_VERIFYPEER => false, // Less secure, but helps with t.me SSL issues
+            CURLOPT_SSL_VERIFYPEER => false,
             CURLOPT_SSL_VERIFYHOST => false,
         ]);
         $handles[$key] = $ch;
@@ -541,15 +546,33 @@ function fetch_multiple_urls_parallel(array $urls): array
     $running = null;
     do {
         curl_multi_exec($multi_handle, $running);
-        curl_multi_select($multi_handle); // Wait for activity
+        curl_multi_select($multi_handle);
     } while ($running > 0);
 
     foreach ($handles as $key => $ch) {
+        $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
         $content = curl_multi_getcontent($ch);
-        if (curl_errno($ch) === 0 && !empty($content)) {
+        
+        // Check for success: no cURL error, a 200 OK status, and non-empty content.
+        if (curl_errno($ch) === 0 && $http_code === 200 && !empty($content)) {
             $results[$key] = $content;
         } else {
-            echo "\nWarning: Failed to fetch URL for source '{$key}': " . curl_error($ch) . "\n";
+            // ---- START OF FIX ----
+            // This is the new warning logic.
+            $error_message = curl_error($ch);
+            if (empty($error_message)) {
+                // Provide a more descriptive message if cURL doesn't give one.
+                if ($http_code !== 200) {
+                    $error_message = "HTTP Status Code {$http_code}";
+                } elseif (empty($content)) {
+                    $error_message = "Received empty response";
+                } else {
+                    $error_message = "Unknown error";
+                }
+            }
+            // Use PHP_EOL for clean newlines in console output.
+            echo PHP_EOL . "  [!] Warning: Failed to fetch for key '{$key}'. Reason: {$error_message}" . PHP_EOL;
+            // ---- END OF FIX ----
         }
         curl_multi_remove_handle($multi_handle, $ch);
         curl_close($ch);
