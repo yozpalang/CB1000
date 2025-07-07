@@ -66,8 +66,7 @@ foreach ($sourcesArray as $source => $sourceData) {
         continue;
     }
 
-    $typePattern = implode('|', array_map('preg_quote', $types, ['/']));
-    $extractedLinks = extractLinksByType($htmlContent, $typePattern);
+    $extractedLinks = extractLinksByType($htmlContent);
 
     if (!empty($extractedLinks)) {
         $configsList[$source] = array_values(array_unique($extractedLinks));
