@@ -719,6 +719,7 @@
     },
     "configshubplus": {
         "types": [
+            "vmess",
             "vless",
             "trojan",
             "ss"
@@ -1669,11 +1670,7 @@
         "logo": "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/freenet_for_everyone.jpg"
     },
     "freenettir": {
-        "types": [
-            "vless",
-            "trojan",
-            "ss"
-        ],
+        "types": [],
         "title": "Free Net / نت آزاد",
         "logo": "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/freenettir.jpg"
     },
@@ -3172,8 +3169,8 @@
     },
     "moftinet": {
         "types": [],
-        "title": "Moftinet",
-        "logo": "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/moftinet.jpg"
+        "title": "Unknown Title",
+        "logo": ""
     },
     "moh3enivx": {
         "types": [],
@@ -3306,11 +3303,7 @@
         "logo": "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/mtconfig.jpg"
     },
     "mtpproxy0098": {
-        "types": [
-            "vmess",
-            "vless",
-            "ss"
-        ],
+        "types": [],
         "title": "MTPPROXY0098",
         "logo": "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/mtpproxy0098.jpg"
     },
@@ -5575,14 +5568,9 @@
         "logo": "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/v2ray_swhil.jpg"
     },
     "v2ray_team": {
-        "types": [
-            "vmess",
-            "vless",
-            "trojan",
-            "ss"
-        ],
-        "title": "وی پی ان - پروکسی | V2ray Team",
-        "logo": "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/v2ray_team.jpg"
+        "types": [],
+        "title": "Unknown Title",
+        "logo": ""
     },
     "v2ray_txshop": {
         "types": [],
@@ -5703,7 +5691,6 @@
     },
     "v2raych": {
         "types": [
-            "vmess",
             "vless",
             "trojan",
             "ss"
@@ -6408,6 +6395,7 @@
     "v2rayweb": {
         "types": [
             "vless",
+            "trojan",
             "ss"
         ],
         "title": "V2ray | VPN",
@@ -6559,7 +6547,6 @@
     "v2source": {
         "types": [
             "vless",
-            "trojan",
             "ss"
         ],
         "title": "Free V2ray",
@@ -7167,6 +7154,7 @@
     },
     "vpnaloo": {
         "types": [
+            "vmess",
             "vless",
             "trojan",
             "ss"
@@ -7241,9 +7229,12 @@
         "logo": "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/vpncustomize.jpg"
     },
     "vpnepic": {
-        "types": [],
-        "title": "Unknown Title",
-        "logo": ""
+        "types": [
+            "vless",
+            "ss"
+        ],
+        "title": "√2rayNG",
+        "logo": "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/vpnepic.jpg"
     },
     "vpneti": {
         "types": [
@@ -7523,9 +7514,12 @@
         "logo": "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/vpntwitt.jpg"
     },
     "vpnv2rayng90": {
-        "types": [],
-        "title": "Unknown Title",
-        "logo": ""
+        "types": [
+            "vless",
+            "ss"
+        ],
+        "title": "Kasra.store",
+        "logo": "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/vpnv2rayng90.jpg"
     },
     "vpnv2rayngv": {
         "types": [
@@ -7708,14 +7702,9 @@
         "logo": "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/wedbaztel.jpg"
     },
     "wedbazvpn": {
-        "types": [
-            "vmess",
-            "vless",
-            "trojan",
-            "ss"
-        ],
-        "title": "WedBaZ",
-        "logo": "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/wedbazvpn.jpg"
+        "types": [],
+        "title": "Unknown Title",
+        "logo": ""
     },
     "weedhast": {
         "types": [],

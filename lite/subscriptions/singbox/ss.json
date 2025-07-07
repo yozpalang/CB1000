@@ -105,14 +105,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇪🇸 ES | 🟢 | ss | @free1ss | 18",
+                "🇪🇸 ES | 🟢 | ss | @free1ss | 16",
+                "🇳🇱 NL | 🟢 | ss | @free1ss | 17",
                 "🇺🇸 US | 🟢 | ss | @key_outline | 18",
                 "🇫🇷 FR | 🟢 | ss | @key_outline | 19",
                 "🇬🇧 GB | 🟢 | ss | @nationalproxytelegram | 0",
                 "🇬🇧 GB | 🟢 | ss | @nationalproxytelegram | 1",
                 "🇪🇸 ES | 🟢 | ss | @outlineopenkey | 5",
                 "🇩🇪 DE | 🟢 | ss | @outlineopenkey | 6",
-                "🇫🇮 FI | 🟢 | ss | @outlinereleasedkey | 18",
+                "🇸🇬 SG | 🟢 | ss | @outlinereleasedkey | 17",
+                "🇩🇪 DE | 🟢 | ss | @outlinereleasedkey | 18",
                 "🇩🇪 DE | 🟢 | ss | @outlines_vpn | 4",
                 "❔ XX | 🟢 | ss | @outlines_vpn | 5",
                 "🇹🇷 TR | 🟢 | ss | @proxy_net_meli | 8",
@@ -123,12 +125,12 @@
                 "🇩🇪 DE | 🟢 | ss | @shadowsockskeys | 16",
                 "🇩🇪 DE | 🟢 | ss | @shadowsocksserv | 1",
                 "🇨🇦 CA | 🟢 | ss | @shadowsocksserv | 2",
-                "🇺🇸 US | 🟢 | ss | @slamvpn | 6",
+                "🇺🇸 US | 🟢 | ss | @slamvpn | 1",
                 "🇩🇪 DE | 🟢 | ss | @srv2ray | 0",
                 "🇫🇷 FR | 🟢 | ss | @tm_vpn_ogrysy | 7",
                 "🇺🇸 US | 🟢 | ss | @vip_freevpn1 | 0",
+                "🇵🇱 PL | 🟢 | ss | @vipufovpn | 8",
                 "🇵🇱 PL | 🟢 | ss | @vipufovpn | 9",
-                "🇵🇱 PL | 🟢 | ss | @vipufovpn | 10",
                 "🇬🇧 GB | 🟢 | ss | @vmess_iran | 0",
                 "🇨🇳 CN | 🟢 | ss | @wxdy666 | 0",
                 "🇬🇧 GB | 🟢 | ss | @xivpn | 0"
@@ -138,14 +140,16 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇪🇸 ES | 🟢 | ss | @free1ss | 18",
+                "🇪🇸 ES | 🟢 | ss | @free1ss | 16",
+                "🇳🇱 NL | 🟢 | ss | @free1ss | 17",
                 "🇺🇸 US | 🟢 | ss | @key_outline | 18",
                 "🇫🇷 FR | 🟢 | ss | @key_outline | 19",
                 "🇬🇧 GB | 🟢 | ss | @nationalproxytelegram | 0",
                 "🇬🇧 GB | 🟢 | ss | @nationalproxytelegram | 1",
                 "🇪🇸 ES | 🟢 | ss | @outlineopenkey | 5",
                 "🇩🇪 DE | 🟢 | ss | @outlineopenkey | 6",
-                "🇫🇮 FI | 🟢 | ss | @outlinereleasedkey | 18",
+                "🇸🇬 SG | 🟢 | ss | @outlinereleasedkey | 17",
+                "🇩🇪 DE | 🟢 | ss | @outlinereleasedkey | 18",
                 "🇩🇪 DE | 🟢 | ss | @outlines_vpn | 4",
                 "❔ XX | 🟢 | ss | @outlines_vpn | 5",
                 "🇹🇷 TR | 🟢 | ss | @proxy_net_meli | 8",
@@ -156,12 +160,12 @@
                 "🇩🇪 DE | 🟢 | ss | @shadowsockskeys | 16",
                 "🇩🇪 DE | 🟢 | ss | @shadowsocksserv | 1",
                 "🇨🇦 CA | 🟢 | ss | @shadowsocksserv | 2",
-                "🇺🇸 US | 🟢 | ss | @slamvpn | 6",
+                "🇺🇸 US | 🟢 | ss | @slamvpn | 1",
                 "🇩🇪 DE | 🟢 | ss | @srv2ray | 0",
                 "🇫🇷 FR | 🟢 | ss | @tm_vpn_ogrysy | 7",
                 "🇺🇸 US | 🟢 | ss | @vip_freevpn1 | 0",
+                "🇵🇱 PL | 🟢 | ss | @vipufovpn | 8",
                 "🇵🇱 PL | 🟢 | ss | @vipufovpn | 9",
-                "🇵🇱 PL | 🟢 | ss | @vipufovpn | 10",
                 "🇬🇧 GB | 🟢 | ss | @vmess_iran | 0",
                 "🇨🇳 CN | 🟢 | ss | @wxdy666 | 0",
                 "🇬🇧 GB | 🟢 | ss | @xivpn | 0"
@@ -187,12 +191,20 @@
             "type": "dns"
         },
         {
-            "tag": "🇪🇸 ES | 🟢 | ss | @free1ss | 18",
+            "tag": "🇪🇸 ES | 🟢 | ss | @free1ss | 16",
             "type": "shadowsocks",
             "server": "194.87.45.189",
             "server_port": 443,
             "method": "chacha20-ietf-poly1305",
             "password": "sf5NNo7Xyi4GYaF4VODDto"
+        },
+        {
+            "tag": "🇳🇱 NL | 🟢 | ss | @free1ss | 17",
+            "type": "shadowsocks",
+            "server": "193.29.139.175",
+            "server_port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "1RWwXhwfAB5gAEozU4G2Pg"
         },
         {
             "tag": "🇺🇸 US | 🟢 | ss | @key_outline | 18",
@@ -243,7 +255,15 @@
             "password": "sZCTOeoXoVtmAtFUUtrFAI"
         },
         {
-            "tag": "🇫🇮 FI | 🟢 | ss | @outlinereleasedkey | 18",
+            "tag": "🇸🇬 SG | 🟢 | ss | @outlinereleasedkey | 17",
+            "type": "shadowsocks",
+            "server": "45.76.180.205",
+            "server_port": 31298,
+            "method": "chacha20-ietf-poly1305",
+            "password": "c976721a-e390-4dbf-b4f9-72c3feb9594c"
+        },
+        {
+            "tag": "🇩🇪 DE | 🟢 | ss | @outlinereleasedkey | 18",
             "type": "shadowsocks",
             "server": "89.35.119.87",
             "server_port": 5904,
@@ -331,7 +351,7 @@
             "password": "e4FCWrgpkji3QY"
         },
         {
-            "tag": "🇺🇸 US | 🟢 | ss | @slamvpn | 6",
+            "tag": "🇺🇸 US | 🟢 | ss | @slamvpn | 1",
             "type": "shadowsocks",
             "server": "45.87.175.178",
             "server_port": 8080,
@@ -363,7 +383,7 @@
             "password": "u17T3BvpYaaiuW2c"
         },
         {
-            "tag": "🇵🇱 PL | 🟢 | ss | @vipufovpn | 9",
+            "tag": "🇵🇱 PL | 🟢 | ss | @vipufovpn | 8",
             "type": "shadowsocks",
             "server": "54.36.174.181",
             "server_port": 5003,
@@ -371,7 +391,7 @@
             "password": "g5MeD6Ft3CWlJId"
         },
         {
-            "tag": "🇵🇱 PL | 🟢 | ss | @vipufovpn | 10",
+            "tag": "🇵🇱 PL | 🟢 | ss | @vipufovpn | 9",
             "type": "shadowsocks",
             "server": "54.36.174.181",
             "server_port": 5601,

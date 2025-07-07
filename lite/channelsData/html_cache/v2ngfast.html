@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>سرور کانفیگ V2rayNG – Telegram</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible"
+     content="IE=edge" />
+    <meta name="MobileOptimized" content="176" />
+    <meta name="HandheldFriendly" content="True" />
+    
+<meta property="og:title" content="سرور کانفیگ V2rayNG">
+<meta property="og:image" content="https://cdn4.cdn-telegram.org/file/Nj4xEaoYUyYRwJLy645o6PmBrTQQJCsnVf4qyvlMa6646pELkK1HhY7OmSSugss_7wNdxNQBmZV-_CTLArvR8K-YoRFrVnwB0mVDcVqGySg1e9dqsr3_wcmwDxxT5MBPCFAgF5ghB9Wg2UIIn38tu_pdOEfAx-0WSlV1T0fYRNrBC8D5hbCqSARv7-rPiePZqzqJHSvDG22GIyfQIEnD0okYp1sB0abF35C3b3LgfzRurkA2Hh9VKZ0T6hYrGz0mh9KrnCgd-B8qvXMtVowOCKA_YkbPqBW4GTf3tp3PGp-GYiFfPSXh56Cci9NwQjwP61Nn9N0AWmKgDs5sDra0VQ.jpg">
+<meta property="og:site_name" content="Telegram">
+<meta property="og:description" content="">
+
+<meta property="twitter:title" content="سرور کانفیگ V2rayNG">
+<meta property="twitter:image" content="https://cdn4.cdn-telegram.org/file/Nj4xEaoYUyYRwJLy645o6PmBrTQQJCsnVf4qyvlMa6646pELkK1HhY7OmSSugss_7wNdxNQBmZV-_CTLArvR8K-YoRFrVnwB0mVDcVqGySg1e9dqsr3_wcmwDxxT5MBPCFAgF5ghB9Wg2UIIn38tu_pdOEfAx-0WSlV1T0fYRNrBC8D5hbCqSARv7-rPiePZqzqJHSvDG22GIyfQIEnD0okYp1sB0abF35C3b3LgfzRurkA2Hh9VKZ0T6hYrGz0mh9KrnCgd-B8qvXMtVowOCKA_YkbPqBW4GTf3tp3PGp-GYiFfPSXh56Cci9NwQjwP61Nn9N0AWmKgDs5sDra0VQ.jpg">
+<meta property="twitter:site" content="@Telegram">
+
+<meta property="al:ios:app_store_id" content="686449807">
+<meta property="al:ios:app_name" content="Telegram Messenger">
+<meta property="al:ios:url" content="tg://resolve?domain=v2ngfast">
+
+<meta property="al:android:url" content="tg://resolve?domain=v2ngfast">
+<meta property="al:android:app_name" content="Telegram">
+<meta property="al:android:package" content="org.telegram.messenger">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@Telegram">
+<meta name="twitter:description" content="
+">
+
+    <link rel="prev" href="/s/v2ngfast?before=158">
+<link rel="canonical" href="/s/v2ngfast?before=170">
+
+    <script>window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches&&document.documentElement&&document.documentElement.classList&&document.documentElement.classList.add('theme_dark');</script>
+    <link rel="icon" type="image/svg+xml" href="//telegram.org/img/website_icon.svg?4">
+<link rel="apple-touch-icon" sizes="180x180" href="//telegram.org/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//telegram.org/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
+<link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
+    <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
+    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <script>TBaseUrl='/';</script>
+  </head>
+  <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
+    <div class="tgme_background_wrap">
+      <canvas id="tgme_background" class="tgme_background" width="50" height="50" data-colors="dbddbb,6ba587,d5d88d,88b884"></canvas>
+      <div class="tgme_background_pattern"></div>
+    </div>
+    <header class="tgme_header search_collapsed">
+  <div class="tgme_container">
+    <div class="tgme_header_search">
+      <form class="tgme_header_search_form" action="/s/v2ngfast">
+        <svg class="tgme_header_search_form_icon" width="20" height="20" viewBox="0 0 20 20"><g fill="none" stroke="#7D7F81" stroke-width="1.4"><circle cx="9" cy="9" r="6"></circle><path d="M13.5,13.5 L17,17" stroke-linecap="round"></path></g></svg>
+        <input class="tgme_header_search_form_input js-header_search" placeholder="Search" name="q" autocomplete="off" value="" />
+        <a href="/s/v2ngfast" class="tgme_header_search_form_clear"><svg class="tgme_action_button_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20"><g class="icon_body" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-width="1.5"><path d="M6 14l8-8m0 8L6 6" stroke-dasharray="0,11.314" stroke-dashoffset="5.657"/><path d="M26 14l8-8m0 8l-8-8" stroke-dasharray="0.371,10.943" stroke-dashoffset="5.842"/><path d="M46 14l8-8m0 8l-8-8" stroke-dasharray="1.982,9.332" stroke-dashoffset="6.647756"/><path d="M66 14l8-8m0 8l-8-8" stroke-dasharray="5.173,6.14" stroke-dashoffset="8.243"/><path d="M86 14l8-8m0 8l-8-8" stroke-dasharray="7.866,3.448" stroke-dashoffset="9.59"/><path d="M106 14l8-8m0 8l-8-8" stroke-dasharray="9.471,1.843" stroke-dashoffset="10.392"/><path d="M126 14l8-8m0 8l-8-8" stroke-dasharray="10.417,0.896" stroke-dashoffset="10.866"/><path d="M146 14l8-8m0 8l-8-8" stroke-dasharray="10.961,0.353" stroke-dashoffset="11.137"/><path d="M166 14l8-8m0 8l-8-8" stroke-dasharray="11.234,0.08" stroke-dashoffset="11.274"/><path d="M186 14l8-8m0 8l-8-8"/></g></svg></a>
+      </form>
+    </div>
+    <div class="tgme_header_right_column">
+      <section class="tgme_right_column">
+        <div class="tgme_channel_info">
+          <div class="tgme_channel_info_header">
+            <i class="tgme_page_photo_image bgcolor6" data-content="سV"><img src="https://cdn4.cdn-telegram.org/file/YUNhiLTZnQTtj94zb7a_dEKw00ilaZ5sdXb59p936M9sJBP9Ovw9UXkE_BzCUN7A-FDiqILTS5tBewuCAPJ4z69K992edNWwz2bju2wfw72qmCpcxXv-q6hbN5SYs7_XEXTf3R75XRGrYvPu4z8VSFZlciKiH7gqqEVh-Acte9vGdr47LyopJ695U2kL3jY5ZH_6u3qGCqIrvOLLccx4P-ITE0JXnkihI__VRbHmvaweE2jdoj-rQRsFqEa7JckhDZ7mRpGL28X4gC-Phrs6r9QcTfcNozU2LxxVMYewybStZqlJozHv5ksZKpdktbGBM55R1NItavhtFraQI4KkNQ.jpg"></i>
+            <div class="tgme_channel_info_header_title_wrap">
+              <div class="tgme_channel_info_header_title"><span dir="auto">سرور کانفیگ V2rayNG</span></div>
+              <div class="tgme_channel_info_header_labels"></div>
+            </div>
+            <div class="tgme_channel_info_header_username"><a href="https://t.me/v2ngfast">@v2ngfast</a></div>
+          </div>
+          <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">4.4K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">10</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">1</span> <span class="counter_type">link</span></div></div>
+          
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=347d1d5b12466469b3_10437333323424454784">
+            <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
+          </a>
+          <div class="tgme_footer">
+            <div class="tgme_footer_column">
+              <h5><a href="//telegram.org/faq">About</a></h5>
+            </div>
+            <div class="tgme_footer_column">
+              <h5><a href="//telegram.org/blog">Blog</a></h5>
+            </div>
+            <div class="tgme_footer_column">
+              <h5><a href="//telegram.org/apps">Apps</a></h5>
+            </div>
+            <div class="tgme_footer_column">
+              <h5><a href="//core.telegram.org/">Platform</a></h5>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="tgme_header_info">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=347d1d5b12466469b3_10437333323424454784">
+        <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
+      </a>
+      <a class="tgme_header_link" href="https://t.me/v2ngfast">
+        <i class="tgme_page_photo_image bgcolor6" data-content="سV"><img src="https://cdn4.cdn-telegram.org/file/YUNhiLTZnQTtj94zb7a_dEKw00ilaZ5sdXb59p936M9sJBP9Ovw9UXkE_BzCUN7A-FDiqILTS5tBewuCAPJ4z69K992edNWwz2bju2wfw72qmCpcxXv-q6hbN5SYs7_XEXTf3R75XRGrYvPu4z8VSFZlciKiH7gqqEVh-Acte9vGdr47LyopJ695U2kL3jY5ZH_6u3qGCqIrvOLLccx4P-ITE0JXnkihI__VRbHmvaweE2jdoj-rQRsFqEa7JckhDZ7mRpGL28X4gC-Phrs6r9QcTfcNozU2LxxVMYewybStZqlJozHv5ksZKpdktbGBM55R1NItavhtFraQI4KkNQ.jpg"></i>
+        <div class="tgme_header_title_wrap">
+          <div class="tgme_header_title"><span dir="auto">سرور کانفیگ V2rayNG</span></div>
+          <div class="tgme_header_labels"></div>
+        </div>
+        <div class="tgme_header_counter">4.4K subscribers</div>
+      </a>
+    </div>
+  </div>
+</header>
+<main class="tgme_main" data-url="/v2ngfast">
+  <div class="tgme_container">
+    <section class="tgme_channel_history js-message_history">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/v2ngfast?before=158" class="tme_messages_more js-messages_more" data-before="158"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2ngFast/158" data-view="eyJjIjotMjE5MTUyNzkxOCwicCI6MTU4LCJ0IjoxNzUxOTIyNjIxLCJoIjoiOGRiMzBlZmMwZDE3YzY5YzcyIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/V2ngFast"><i class="tgme_widget_message_user_photo bgcolor6" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/YUNhiLTZnQTtj94zb7a_dEKw00ilaZ5sdXb59p936M9sJBP9Ovw9UXkE_BzCUN7A-FDiqILTS5tBewuCAPJ4z69K992edNWwz2bju2wfw72qmCpcxXv-q6hbN5SYs7_XEXTf3R75XRGrYvPu4z8VSFZlciKiH7gqqEVh-Acte9vGdr47LyopJ695U2kL3jY5ZH_6u3qGCqIrvOLLccx4P-ITE0JXnkihI__VRbHmvaweE2jdoj-rQRsFqEa7JckhDZ7mRpGL28X4gC-Phrs6r9QcTfcNozU2LxxVMYewybStZqlJozHv5ksZKpdktbGBM55R1NItavhtFraQI4KkNQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/V2ngFast"><span dir="auto">سرور کانفیگ V2rayNG</span></a></div>
+
+<a class="tgme_widget_message_reply" href="https://t.me/V2ngFast/157" >
+<div class="tgme_widget_message_author accent_color">
+  <span class="tgme_widget_message_author_name" dir="auto">سرور کانفیگ V2rayNG</span>
+</div>
+<div class="tgme_widget_message_text js-message_reply_text" dir="auto"><tg-emoji emoji-id="5219992024790349095"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i></tg-emoji> کانفیگ رایگان v2ray <tg-emoji emoji-id="5352792306208480366"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8E.png')"><b>🌎</b></i></tg-emoji> لوکیشن:&nbsp; <tg-emoji emoji-id="5460710948727693721"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i></tg-emoji> <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B9C.png')"><b>🛜</b></i> مناسب برای تمامی اپراتورها <tg-emoji emoji-id="5364265190353286344"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938A.png')"><b>📊</b></i></tg-emoji> وضعیت : آنلاین <tg-emoji emoji-id="5370714135287832775"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F948B.png')"><b>🔋</b></i></tg-emoji> <tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5343909794149310690"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i></tg-emoji> vless://7a7c173a-d697-4229-8dd4-2ef476c2f331@172.67.21.239:2052?path=%2F%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast%3Fed%3D2048&amp;se…</div>
+</a>
+<div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto">ری اکشن ها رو ببرید بالا حمایت کنید <tg-emoji emoji-id="5827721710966673418"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/V2ngFast/158" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+
+
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">2.8K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/V2ngFast/158"><time datetime="2025-06-05T13:38:27+00:00" class="time">13:38</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2ngFast/159" data-view="eyJjIjotMjE5MTUyNzkxOCwicCI6MTU5LCJ0IjoxNzUxOTIyNjIxLCJoIjoiYjFmNDNiNjAxMDAwOTdiY2VkIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/V2ngFast"><i class="tgme_widget_message_user_photo bgcolor6" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/YUNhiLTZnQTtj94zb7a_dEKw00ilaZ5sdXb59p936M9sJBP9Ovw9UXkE_BzCUN7A-FDiqILTS5tBewuCAPJ4z69K992edNWwz2bju2wfw72qmCpcxXv-q6hbN5SYs7_XEXTf3R75XRGrYvPu4z8VSFZlciKiH7gqqEVh-Acte9vGdr47LyopJ695U2kL3jY5ZH_6u3qGCqIrvOLLccx4P-ITE0JXnkihI__VRbHmvaweE2jdoj-rQRsFqEa7JckhDZ7mRpGL28X4gC-Phrs6r9QcTfcNozU2LxxVMYewybStZqlJozHv5ksZKpdktbGBM55R1NItavhtFraQI4KkNQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/V2ngFast"><span dir="auto">سرور کانفیگ V2rayNG</span></a></div>
+
+
+<div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5219992024790349095"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i></tg-emoji> <b>کانفیگ رایگان v2ray</b><br/><tg-emoji emoji-id="5352792306208480366"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8E.png')"><b>🌎</b></i></tg-emoji> <b>لوکیشن:</b>&nbsp; <tg-emoji emoji-id="5460710948727693721"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i></tg-emoji><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B9C.png')"><b>🛜</b></i> <b>مناسب برای تمامی اپراتورها</b><br/><tg-emoji emoji-id="5364265190353286344"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938A.png')"><b>📊</b></i></tg-emoji> <b>وضعیت : آنلاین </b><tg-emoji emoji-id="5370714135287832775"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F948B.png')"><b>🔋</b></i></tg-emoji><br/><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5343909794149310690"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i></tg-emoji><br/><code>vless://8a979196-102e-4a9f-bb44-cabc32b33277@172.67.21.239:2052?path=%2F%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast%3Fed%3D2048&amp;security=&amp;encryption=none&amp;host=v2ngfast.nanvrfood.ir.&amp;type=httpupgrade#%F0%9F%87%A9%F0%9F%87%AA%20%40V2ngFast</code><br/><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><br/><tg-emoji emoji-id="5931328451133837322"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD90.png')"><b>⭐️</b></i></tg-emoji><b>ری اکشن </b><tg-emoji emoji-id="5857247029851328906"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i></tg-emoji><b> یادتون نره</b><tg-emoji emoji-id="5873124579051836559"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/V2ngFast/159" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+
+
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">3.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/V2ngFast/159"><time datetime="2025-06-07T09:05:44+00:00" class="time">09:05</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2ngFast/160" data-view="eyJjIjotMjE5MTUyNzkxOCwicCI6MTYwLCJ0IjoxNzUxOTIyNjIxLCJoIjoiZTZkNGZkZTQ5ZGRkMmQzMWNkIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/V2ngFast"><i class="tgme_widget_message_user_photo bgcolor6" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/YUNhiLTZnQTtj94zb7a_dEKw00ilaZ5sdXb59p936M9sJBP9Ovw9UXkE_BzCUN7A-FDiqILTS5tBewuCAPJ4z69K992edNWwz2bju2wfw72qmCpcxXv-q6hbN5SYs7_XEXTf3R75XRGrYvPu4z8VSFZlciKiH7gqqEVh-Acte9vGdr47LyopJ695U2kL3jY5ZH_6u3qGCqIrvOLLccx4P-ITE0JXnkihI__VRbHmvaweE2jdoj-rQRsFqEa7JckhDZ7mRpGL28X4gC-Phrs6r9QcTfcNozU2LxxVMYewybStZqlJozHv5ksZKpdktbGBM55R1NItavhtFraQI4KkNQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/V2ngFast"><span dir="auto">سرور کانفیگ V2rayNG</span></a></div>
+
+<a class="tgme_widget_message_reply" href="https://t.me/V2ngFast/159" >
+<div class="tgme_widget_message_author accent_color">
+  <span class="tgme_widget_message_author_name" dir="auto">سرور کانفیگ V2rayNG</span>
+</div>
+<div class="tgme_widget_message_text js-message_reply_text" dir="auto"><tg-emoji emoji-id="5219992024790349095"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i></tg-emoji> کانفیگ رایگان v2ray <tg-emoji emoji-id="5352792306208480366"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8E.png')"><b>🌎</b></i></tg-emoji> لوکیشن:&nbsp; <tg-emoji emoji-id="5460710948727693721"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i></tg-emoji> <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B9C.png')"><b>🛜</b></i> مناسب برای تمامی اپراتورها <tg-emoji emoji-id="5364265190353286344"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938A.png')"><b>📊</b></i></tg-emoji> وضعیت : آنلاین <tg-emoji emoji-id="5370714135287832775"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F948B.png')"><b>🔋</b></i></tg-emoji> <tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5343909794149310690"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i></tg-emoji> vless://8a979196-102e-4a9f-bb44-cabc32b33277@172.67.21.239:2052?path=%2F%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast%3Fed%3D2048&amp;se…</div>
+</a>
+<div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto">ری اکشن ها رو ببرید بالا حمایت کنید <tg-emoji emoji-id="5827721710966673418"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/V2ngFast/160" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+
+
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">3.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/V2ngFast/160"><time datetime="2025-06-07T09:05:47+00:00" class="time">09:05</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2ngFast/161" data-view="eyJjIjotMjE5MTUyNzkxOCwicCI6MTYxLCJ0IjoxNzUxOTIyNjIxLCJoIjoiMjU5OTU1ZjFmNDUwOTI3NjY5In0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/V2ngFast"><i class="tgme_widget_message_user_photo bgcolor6" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/YUNhiLTZnQTtj94zb7a_dEKw00ilaZ5sdXb59p936M9sJBP9Ovw9UXkE_BzCUN7A-FDiqILTS5tBewuCAPJ4z69K992edNWwz2bju2wfw72qmCpcxXv-q6hbN5SYs7_XEXTf3R75XRGrYvPu4z8VSFZlciKiH7gqqEVh-Acte9vGdr47LyopJ695U2kL3jY5ZH_6u3qGCqIrvOLLccx4P-ITE0JXnkihI__VRbHmvaweE2jdoj-rQRsFqEa7JckhDZ7mRpGL28X4gC-Phrs6r9QcTfcNozU2LxxVMYewybStZqlJozHv5ksZKpdktbGBM55R1NItavhtFraQI4KkNQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/V2ngFast"><span dir="auto">سرور کانفیگ V2rayNG</span></a></div>
+
+
+<div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5219992024790349095"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i></tg-emoji> <b>کانفیگ رایگان v2ray</b><br/><tg-emoji emoji-id="5352792306208480366"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8E.png')"><b>🌎</b></i></tg-emoji> <b>لوکیشن:</b>&nbsp; <tg-emoji emoji-id="5460710948727693721"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i></tg-emoji><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B9C.png')"><b>🛜</b></i> <b>مناسب برای تمامی اپراتورها</b><br/><tg-emoji emoji-id="5364265190353286344"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938A.png')"><b>📊</b></i></tg-emoji> <b>وضعیت : آنلاین </b><tg-emoji emoji-id="5370714135287832775"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F948B.png')"><b>🔋</b></i></tg-emoji><br/><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5343909794149310690"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i></tg-emoji><br/><code>vless://13fb974a-86d6-4440-b9ee-207ff89b628f@172.67.21.239:2052?path=%2F%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast%3Fed%3D2048&amp;security=&amp;encryption=none&amp;host=v2ngfast.nanvrfood.ir.&amp;type=httpupgrade#%F0%9F%87%A9%F0%9F%87%AA%20%40V2ngFast</code><br/><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><br/><tg-emoji emoji-id="5931328451133837322"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD90.png')"><b>⭐️</b></i></tg-emoji><b>ری اکشن </b><tg-emoji emoji-id="5857247029851328906"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i></tg-emoji><b> یادتون نره</b><tg-emoji emoji-id="5873124579051836559"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/V2ngFast/161" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+
+
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">3.7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/V2ngFast/161"><time datetime="2025-06-08T16:02:26+00:00" class="time">16:02</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2ngFast/162" data-view="eyJjIjotMjE5MTUyNzkxOCwicCI6MTYyLCJ0IjoxNzUxOTIyNjIxLCJoIjoiY2UxYzhhYTdlOGQzZjNjMTRjIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/V2ngFast"><i class="tgme_widget_message_user_photo bgcolor6" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/YUNhiLTZnQTtj94zb7a_dEKw00ilaZ5sdXb59p936M9sJBP9Ovw9UXkE_BzCUN7A-FDiqILTS5tBewuCAPJ4z69K992edNWwz2bju2wfw72qmCpcxXv-q6hbN5SYs7_XEXTf3R75XRGrYvPu4z8VSFZlciKiH7gqqEVh-Acte9vGdr47LyopJ695U2kL3jY5ZH_6u3qGCqIrvOLLccx4P-ITE0JXnkihI__VRbHmvaweE2jdoj-rQRsFqEa7JckhDZ7mRpGL28X4gC-Phrs6r9QcTfcNozU2LxxVMYewybStZqlJozHv5ksZKpdktbGBM55R1NItavhtFraQI4KkNQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/V2ngFast"><span dir="auto">سرور کانفیگ V2rayNG</span></a></div>
+
+<a class="tgme_widget_message_reply" href="https://t.me/V2ngFast/161" >
+<div class="tgme_widget_message_author accent_color">
+  <span class="tgme_widget_message_author_name" dir="auto">سرور کانفیگ V2rayNG</span>
+</div>
+<div class="tgme_widget_message_text js-message_reply_text" dir="auto"><tg-emoji emoji-id="5219992024790349095"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i></tg-emoji> کانفیگ رایگان v2ray <tg-emoji emoji-id="5352792306208480366"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8E.png')"><b>🌎</b></i></tg-emoji> لوکیشن:&nbsp; <tg-emoji emoji-id="5460710948727693721"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i></tg-emoji> <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B9C.png')"><b>🛜</b></i> مناسب برای تمامی اپراتورها <tg-emoji emoji-id="5364265190353286344"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938A.png')"><b>📊</b></i></tg-emoji> وضعیت : آنلاین <tg-emoji emoji-id="5370714135287832775"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F948B.png')"><b>🔋</b></i></tg-emoji> <tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5343909794149310690"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i></tg-emoji> vless://13fb974a-86d6-4440-b9ee-207ff89b628f@172.67.21.239:2052?path=%2F%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast%3Fed%3D2048&amp;se…</div>
+</a>
+<div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto">ری اکشن ها رو ببرید بالا حمایت کنید <tg-emoji emoji-id="5827721710966673418"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/V2ngFast/162" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+
+
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">4.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/V2ngFast/162"><time datetime="2025-06-08T16:02:29+00:00" class="time">16:02</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2ngFast/163" data-view="eyJjIjotMjE5MTUyNzkxOCwicCI6MTYzLCJ0IjoxNzUxOTIyNjIxLCJoIjoiOGIxY2UzNzJjZDAzYTEzNjMyIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/V2ngFast"><i class="tgme_widget_message_user_photo bgcolor6" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/YUNhiLTZnQTtj94zb7a_dEKw00ilaZ5sdXb59p936M9sJBP9Ovw9UXkE_BzCUN7A-FDiqILTS5tBewuCAPJ4z69K992edNWwz2bju2wfw72qmCpcxXv-q6hbN5SYs7_XEXTf3R75XRGrYvPu4z8VSFZlciKiH7gqqEVh-Acte9vGdr47LyopJ695U2kL3jY5ZH_6u3qGCqIrvOLLccx4P-ITE0JXnkihI__VRbHmvaweE2jdoj-rQRsFqEa7JckhDZ7mRpGL28X4gC-Phrs6r9QcTfcNozU2LxxVMYewybStZqlJozHv5ksZKpdktbGBM55R1NItavhtFraQI4KkNQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/V2ngFast"><span dir="auto">سرور کانفیگ V2rayNG</span></a></div>
+
+
+<div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5219992024790349095"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i></tg-emoji> <b>کانفیگ رایگان v2ray</b><br/><tg-emoji emoji-id="5352792306208480366"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8E.png')"><b>🌎</b></i></tg-emoji> <b>لوکیشن:</b>&nbsp; <tg-emoji emoji-id="5460710948727693721"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i></tg-emoji><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B9C.png')"><b>🛜</b></i> <b>مناسب برای تمامی اپراتورها</b><br/><tg-emoji emoji-id="5364265190353286344"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938A.png')"><b>📊</b></i></tg-emoji> <b>وضعیت : آنلاین </b><tg-emoji emoji-id="5370714135287832775"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F948B.png')"><b>🔋</b></i></tg-emoji><br/><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5343909794149310690"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i></tg-emoji><br/><code>vless://7d197c79-92f2-46fa-80d6-eb74ff7693f5@172.67.21.239:2052?path=%2F%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast%3Fed%3D2048&amp;security=&amp;encryption=none&amp;host=v2ngfast.nanvrfood.ir.&amp;type=httpupgrade#%F0%9F%87%A9%F0%9F%87%AA%20%40V2ngFast</code><br/><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><br/><tg-emoji emoji-id="5931328451133837322"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD90.png')"><b>⭐️</b></i></tg-emoji><b>ری اکشن </b><tg-emoji emoji-id="5857247029851328906"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i></tg-emoji><b> یادتون نره</b><tg-emoji emoji-id="5873124579051836559"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/V2ngFast/163" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+
+
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">5.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/V2ngFast/163"><time datetime="2025-06-09T16:17:13+00:00" class="time">16:17</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2ngFast/164" data-view="eyJjIjotMjE5MTUyNzkxOCwicCI6MTY0LCJ0IjoxNzUxOTIyNjIxLCJoIjoiZjZjZjljYzE4Nzk1NzljYTAzIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/V2ngFast"><i class="tgme_widget_message_user_photo bgcolor6" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/YUNhiLTZnQTtj94zb7a_dEKw00ilaZ5sdXb59p936M9sJBP9Ovw9UXkE_BzCUN7A-FDiqILTS5tBewuCAPJ4z69K992edNWwz2bju2wfw72qmCpcxXv-q6hbN5SYs7_XEXTf3R75XRGrYvPu4z8VSFZlciKiH7gqqEVh-Acte9vGdr47LyopJ695U2kL3jY5ZH_6u3qGCqIrvOLLccx4P-ITE0JXnkihI__VRbHmvaweE2jdoj-rQRsFqEa7JckhDZ7mRpGL28X4gC-Phrs6r9QcTfcNozU2LxxVMYewybStZqlJozHv5ksZKpdktbGBM55R1NItavhtFraQI4KkNQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/V2ngFast"><span dir="auto">سرور کانفیگ V2rayNG</span></a></div>
+
+<a class="tgme_widget_message_reply" href="https://t.me/V2ngFast/163" >
+<div class="tgme_widget_message_author accent_color">
+  <span class="tgme_widget_message_author_name" dir="auto">سرور کانفیگ V2rayNG</span>
+</div>
+<div class="tgme_widget_message_text js-message_reply_text" dir="auto"><tg-emoji emoji-id="5219992024790349095"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i></tg-emoji> کانفیگ رایگان v2ray <tg-emoji emoji-id="5352792306208480366"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8E.png')"><b>🌎</b></i></tg-emoji> لوکیشن:&nbsp; <tg-emoji emoji-id="5460710948727693721"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i></tg-emoji> <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B9C.png')"><b>🛜</b></i> مناسب برای تمامی اپراتورها <tg-emoji emoji-id="5364265190353286344"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938A.png')"><b>📊</b></i></tg-emoji> وضعیت : آنلاین <tg-emoji emoji-id="5370714135287832775"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F948B.png')"><b>🔋</b></i></tg-emoji> <tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5343909794149310690"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i></tg-emoji> vless://7d197c79-92f2-46fa-80d6-eb74ff7693f5@172.67.21.239:2052?path=%2F%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast%3Fed%3D2048&amp;se…</div>
+</a>
+<div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto">ری اکشن ها رو ببرید بالا حمایت کنید <tg-emoji emoji-id="5827721710966673418"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/V2ngFast/164" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+
+
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">5.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/V2ngFast/164"><time datetime="2025-06-09T16:17:15+00:00" class="time">16:17</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2ngFast/165" data-view="eyJjIjotMjE5MTUyNzkxOCwicCI6MTY1LCJ0IjoxNzUxOTIyNjIxLCJoIjoiZTkyNWRmNjg5NDA4MjdjYWFlIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/V2ngFast"><i class="tgme_widget_message_user_photo bgcolor6" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/YUNhiLTZnQTtj94zb7a_dEKw00ilaZ5sdXb59p936M9sJBP9Ovw9UXkE_BzCUN7A-FDiqILTS5tBewuCAPJ4z69K992edNWwz2bju2wfw72qmCpcxXv-q6hbN5SYs7_XEXTf3R75XRGrYvPu4z8VSFZlciKiH7gqqEVh-Acte9vGdr47LyopJ695U2kL3jY5ZH_6u3qGCqIrvOLLccx4P-ITE0JXnkihI__VRbHmvaweE2jdoj-rQRsFqEa7JckhDZ7mRpGL28X4gC-Phrs6r9QcTfcNozU2LxxVMYewybStZqlJozHv5ksZKpdktbGBM55R1NItavhtFraQI4KkNQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/V2ngFast"><span dir="auto">سرور کانفیگ V2rayNG</span></a></div>
+
+
+<div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5219992024790349095"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i></tg-emoji> <b>کانفیگ رایگان v2ray</b><br/><tg-emoji emoji-id="5352792306208480366"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8E.png')"><b>🌎</b></i></tg-emoji> <b>لوکیشن:</b>&nbsp; <tg-emoji emoji-id="5460710948727693721"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i></tg-emoji><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B9C.png')"><b>🛜</b></i> <b>مناسب برای تمامی اپراتورها</b><br/><tg-emoji emoji-id="5364265190353286344"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938A.png')"><b>📊</b></i></tg-emoji> <b>وضعیت : آنلاین </b><tg-emoji emoji-id="5370714135287832775"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F948B.png')"><b>🔋</b></i></tg-emoji><br/><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5343909794149310690"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i></tg-emoji><br/><code>vless://5626a29a-22d8-4794-a3d9-833d51e6c079@172.67.21.239:2052?path=%2F%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast%3Fed%3D2048&amp;security=&amp;encryption=none&amp;host=v2ngfast.nanvrfood.ir.&amp;type=httpupgrade#%F0%9F%87%A9%F0%9F%87%AA%20%40V2ngFast</code><br/><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><br/><tg-emoji emoji-id="5931328451133837322"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD90.png')"><b>⭐️</b></i></tg-emoji><b>ری اکشن </b><tg-emoji emoji-id="5857247029851328906"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i></tg-emoji><b> یادتون نره</b><tg-emoji emoji-id="5873124579051836559"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/V2ngFast/165" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+
+
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">5.5K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/V2ngFast/165"><time datetime="2025-06-10T19:07:55+00:00" class="time">19:07</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2ngFast/166" data-view="eyJjIjotMjE5MTUyNzkxOCwicCI6MTY2LCJ0IjoxNzUxOTIyNjIxLCJoIjoiMmQ2ZTUwZjc2MmM0YTc2Y2U0In0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/V2ngFast"><i class="tgme_widget_message_user_photo bgcolor6" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/YUNhiLTZnQTtj94zb7a_dEKw00ilaZ5sdXb59p936M9sJBP9Ovw9UXkE_BzCUN7A-FDiqILTS5tBewuCAPJ4z69K992edNWwz2bju2wfw72qmCpcxXv-q6hbN5SYs7_XEXTf3R75XRGrYvPu4z8VSFZlciKiH7gqqEVh-Acte9vGdr47LyopJ695U2kL3jY5ZH_6u3qGCqIrvOLLccx4P-ITE0JXnkihI__VRbHmvaweE2jdoj-rQRsFqEa7JckhDZ7mRpGL28X4gC-Phrs6r9QcTfcNozU2LxxVMYewybStZqlJozHv5ksZKpdktbGBM55R1NItavhtFraQI4KkNQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/V2ngFast"><span dir="auto">سرور کانفیگ V2rayNG</span></a></div>
+
+<a class="tgme_widget_message_reply" href="https://t.me/V2ngFast/165" >
+<div class="tgme_widget_message_author accent_color">
+  <span class="tgme_widget_message_author_name" dir="auto">سرور کانفیگ V2rayNG</span>
+</div>
+<div class="tgme_widget_message_text js-message_reply_text" dir="auto"><tg-emoji emoji-id="5219992024790349095"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i></tg-emoji> کانفیگ رایگان v2ray <tg-emoji emoji-id="5352792306208480366"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8E.png')"><b>🌎</b></i></tg-emoji> لوکیشن:&nbsp; <tg-emoji emoji-id="5460710948727693721"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i></tg-emoji> <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B9C.png')"><b>🛜</b></i> مناسب برای تمامی اپراتورها <tg-emoji emoji-id="5364265190353286344"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938A.png')"><b>📊</b></i></tg-emoji> وضعیت : آنلاین <tg-emoji emoji-id="5370714135287832775"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F948B.png')"><b>🔋</b></i></tg-emoji> <tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5787232109374475800"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9784.png')"><b>🗄</b></i></tg-emoji><tg-emoji emoji-id="5343909794149310690"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i></tg-emoji> vless://5626a29a-22d8-4794-a3d9-833d51e6c079@172.67.21.239:2052?path=%2F%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast%3Fed%3D2048&amp;se…</div>
+</a>
+<div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto">ری اکشن ها رو ببرید بالا حمایت کنید <tg-emoji emoji-id="5827721710966673418"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/V2ngFast/166" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+
+
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">5.5K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/V2ngFast/166"><time datetime="2025-06-10T19:07:59+00:00" class="time">19:07</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2ngFast/167" data-view="eyJjIjotMjE5MTUyNzkxOCwicCI6MTY3LCJ0IjoxNzUxOTIyNjIxLCJoIjoiYjM5OTE2NDE3OTQyMTk0YTA1In0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/V2ngFast"><i class="tgme_widget_message_user_photo bgcolor6" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/YUNhiLTZnQTtj94zb7a_dEKw00ilaZ5sdXb59p936M9sJBP9Ovw9UXkE_BzCUN7A-FDiqILTS5tBewuCAPJ4z69K992edNWwz2bju2wfw72qmCpcxXv-q6hbN5SYs7_XEXTf3R75XRGrYvPu4z8VSFZlciKiH7gqqEVh-Acte9vGdr47LyopJ695U2kL3jY5ZH_6u3qGCqIrvOLLccx4P-ITE0JXnkihI__VRbHmvaweE2jdoj-rQRsFqEa7JckhDZ7mRpGL28X4gC-Phrs6r9QcTfcNozU2LxxVMYewybStZqlJozHv5ksZKpdktbGBM55R1NItavhtFraQI4KkNQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/V2ngFast"><span dir="auto">سرور کانفیگ V2rayNG</span></a></div>
+
+
+<div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto"><b>فروش ویژه کانفیگ اختصاصی </b><a href="?q=%23V2rayNG">#V2rayNG</a><b> </b><b><tg-emoji emoji-id="5418197833423527451"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9299.png')"><b>💙</b></i></tg-emoji></b><b><tg-emoji emoji-id="5404459912375838928"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA48D.png')"><b>🤍</b></i></tg-emoji></b><b><tg-emoji emoji-id="5278381022847708767"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F929A.png')"><b>💚</b></i></tg-emoji></b><b><tg-emoji emoji-id="5418085133481683153"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i></tg-emoji></b><b><tg-emoji emoji-id="5240303273025483279"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i></tg-emoji></b><b><br/><br/>مناسب برای تمامی اپراتور ها</b><b><tg-emoji emoji-id="5418184398765824442"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A9.png')"><b>💩</b></i></tg-emoji></b><b><tg-emoji emoji-id="5220174792828658696"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F929C.png')"><b>💜</b></i></tg-emoji></b><b><tg-emoji emoji-id="5202107935588626965"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i></tg-emoji></b><b><tg-emoji emoji-id="5201875187015887897"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i></tg-emoji></b><b><br/>مناسب برای تلگرام ، اینستاگرام، یوتیوب ، واتساپ و ...</b><b><tg-emoji emoji-id="5287370226189482153"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92AC.png')"><b>💬</b></i></tg-emoji></b><b><tg-emoji emoji-id="5289626106222098774"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92AC.png')"><b>💬</b></i></tg-emoji></b><b><tg-emoji emoji-id="5289710498034495796"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296B6.png')"><b>▶️</b></i></tg-emoji></b><b><tg-emoji emoji-id="5287578042477065104"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92AC.png')"><b>💬</b></i></tg-emoji></b><b><br/>مناسب برای سیستم عامل های اندروید ، ios ،ویندوز </b><b><tg-emoji emoji-id="5440910041391573452"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F929A.png')"><b>💚</b></i></tg-emoji></b><b><tg-emoji emoji-id="5440812326590621262"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA48D.png')"><b>🤍</b></i></tg-emoji></b><b><tg-emoji emoji-id="5440501770390350005"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9299.png')"><b>💙</b></i></tg-emoji></b><b><br/>امنیت،کیفیت و سرعت بالا</b><b><tg-emoji emoji-id="6219549292458150316"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9191.png')"><b>👑</b></i></tg-emoji></b><b><br/>آیپی ثابت مناسب بازار های مالی</b><b><tg-emoji emoji-id="5289812658126598000"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i></tg-emoji></b><b><br/>تونل شده (رو همه اپراتور ها وصله)</b><b><tg-emoji emoji-id="6219810752887262728"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F90B9.png')"><b>🐹</b></i></tg-emoji></b><b><br/>پشتیبانی </b><b><tg-emoji emoji-id="5848039204084256865"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/34E283A3.png')"><b>4⃣</b></i></tg-emoji></b><b><tg-emoji emoji-id="5850299671141945181"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/32E283A3.png')"><b>2⃣</b></i></tg-emoji></b><b> ساعته تا آخرین روز سرویس<br/><br/><br/></b><b><tg-emoji emoji-id="6255685257501083955"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C94.png')"><b>✔️</b></i></tg-emoji></b><b> سرور های حجمی یکماهه</b><b><tg-emoji emoji-id="6255902733170116708"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C94.png')"><b>✔️</b></i></tg-emoji></b><b> :<br/><br/></b><b><tg-emoji emoji-id="6298292943690139437"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9887.png')"><b>😇</b></i></tg-emoji></b><b>30 گیگ : 66.000&nbsp;&nbsp;&nbsp; </b><b><tg-emoji emoji-id="6296508771325707891"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji></b><b><br/></b><b><tg-emoji emoji-id="6298292943690139437"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9887.png')"><b>😇</b></i></tg-emoji></b><b>40 گیگ : 80.000&nbsp;&nbsp;&nbsp; </b><b><tg-emoji emoji-id="6296508771325707891"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji></b><b><br/></b><b><tg-emoji emoji-id="6298292943690139437"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9887.png')"><b>😇</b></i></tg-emoji></b><b>50 گیگ : 97.000&nbsp;&nbsp;&nbsp; </b><b><tg-emoji emoji-id="6296508771325707891"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji></b><b><br/></b><b><tg-emoji emoji-id="6298292943690139437"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9887.png')"><b>😇</b></i></tg-emoji></b><b>80 گیگ : 153.000&nbsp;&nbsp; </b><b><tg-emoji emoji-id="6296508771325707891"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji></b><b><br/></b><b><tg-emoji emoji-id="6298292943690139437"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9887.png')"><b>😇</b></i></tg-emoji></b><b>100 گیگ : 197.000&nbsp;&nbsp; </b><b><tg-emoji emoji-id="6296508771325707891"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji></b><b><br/><br/></b><b><tg-emoji emoji-id="6255685257501083955"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C94.png')"><b>✔️</b></i></tg-emoji></b><b> سرور های نامحدود یکماهه</b><b><tg-emoji emoji-id="6255902733170116708"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C94.png')"><b>✔️</b></i></tg-emoji></b><b>:<br/><br/>نامحدود </b><b><tg-emoji emoji-id="5850344742528749093"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i></tg-emoji></b><b> کاربر : 135.000&nbsp;&nbsp; </b><b><tg-emoji emoji-id="6296508771325707891"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji></b><b><br/>نامحدود </b><b><tg-emoji emoji-id="5850299671141945181"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/32E283A3.png')"><b>2⃣</b></i></tg-emoji></b><b> کاربر : 165.000&nbsp;&nbsp; </b><b><tg-emoji emoji-id="6296508771325707891"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji></b><b><br/>نامحدود&nbsp; </b><b><tg-emoji emoji-id="5850665370427329927"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/33E283A3.png')"><b>3⃣</b></i></tg-emoji></b><b> کاربر : 205.000&nbsp;&nbsp; </b><b><tg-emoji emoji-id="6296508771325707891"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji></b><b><br/><br/></b><b><tg-emoji emoji-id="6255793039705377676"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i></tg-emoji></b><b>برای خرید به آیدی زیر پیام بدید</b><b><tg-emoji emoji-id="5447183459602669338"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BD.png')"><b>🔽</b></i></tg-emoji></b><br/><tg-emoji emoji-id="5435879406327314632"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i></tg-emoji> <a href="https://t.me/V2ngFastAdmin" target="_blank">@V2ngFastAdmin</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/V2ngFast/167" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+
+
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">6.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/V2ngFast/167"><time datetime="2025-06-12T09:34:46+00:00" class="time">09:34</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2ngFast/168" data-view="eyJjIjotMjE5MTUyNzkxOCwicCI6MTY4LCJ0IjoxNzUxOTIyNjIxLCJoIjoiNGU4NDJiYjZhYTJiYTNiY2I5In0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/V2ngFast"><i class="tgme_widget_message_user_photo bgcolor6" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/YUNhiLTZnQTtj94zb7a_dEKw00ilaZ5sdXb59p936M9sJBP9Ovw9UXkE_BzCUN7A-FDiqILTS5tBewuCAPJ4z69K992edNWwz2bju2wfw72qmCpcxXv-q6hbN5SYs7_XEXTf3R75XRGrYvPu4z8VSFZlciKiH7gqqEVh-Acte9vGdr47LyopJ695U2kL3jY5ZH_6u3qGCqIrvOLLccx4P-ITE0JXnkihI__VRbHmvaweE2jdoj-rQRsFqEa7JckhDZ7mRpGL28X4gC-Phrs6r9QcTfcNozU2LxxVMYewybStZqlJozHv5ksZKpdktbGBM55R1NItavhtFraQI4KkNQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/V2ngFast"><span dir="auto">سرور کانفیگ V2rayNG</span></a></div>
+
+<a class="tgme_widget_message_reply" href="https://t.me/V2ngFast/167" >
+<div class="tgme_widget_message_author accent_color">
+  <span class="tgme_widget_message_author_name" dir="auto">سرور کانفیگ V2rayNG</span>
+</div>
+<div class="tgme_widget_message_text js-message_reply_text" dir="auto">فروش ویژه کانفیگ اختصاصی #V2rayNG <tg-emoji emoji-id="5418197833423527451"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9299.png')"><b>💙</b></i></tg-emoji><tg-emoji emoji-id="5404459912375838928"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA48D.png')"><b>🤍</b></i></tg-emoji><tg-emoji emoji-id="5278381022847708767"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F929A.png')"><b>💚</b></i></tg-emoji><tg-emoji emoji-id="5418085133481683153"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i></tg-emoji><tg-emoji emoji-id="5240303273025483279"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i></tg-emoji>  مناسب برای تمامی اپراتور ها<tg-emoji emoji-id="5418184398765824442"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A9.png')"><b>💩</b></i></tg-emoji><tg-emoji emoji-id="5220174792828658696"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F929C.png')"><b>💜</b></i></tg-emoji><tg-emoji emoji-id="5202107935588626965"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i></tg-emoji><tg-emoji emoji-id="5201875187015887897"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i></tg-emoji> مناسب برای تلگرام ، اینستاگرام، یوتیوب ، واتساپ و ...<tg-emoji emoji-id="5287370226189482153"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92AC.png')"><b>💬</b></i></tg-emoji><tg-emoji emoji-id="5289626106222098774"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92AC.png')"><b>💬</b></i></tg-emoji><tg-emoji emoji-id="5289710498034495796"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296B6.png')"><b>▶️</b></i></tg-emoji><tg-emoji emoji-id="5287578042477065104"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92AC.png')"><b>💬</b></i></tg-emoji> مناسب برای سیستم عامل های اندروید ، ios ،ویندوز <tg-emoji emoji-id="5440910041391573452"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F929A.png')"><b>💚</b></i></tg-emoji><tg-emoji emoji-id="5440812326590621262"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA48D.png')"><b>🤍</b></i></tg-emoji><tg-emoji emoji-id="5440501770390350005"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9299.png')"><b>💙</b></i></tg-emoji> امنیت،کیفیت و سرعت بالا<tg-emoji emoji-id="6219549292458150316"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9191.png')"><b>👑</b></i></tg-emoji> آیپی ثابت مناسب بازار های مالی<tg-emoji emoji-id="5289812658126598000"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i></tg-emoji> تونل شده (رو همه…</div>
+</a>
+<div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto">با خرید سرویس های ما با وجود ضعیف بودن اینترنت ها خیلی راحت میتونید متصل باشید<tg-emoji emoji-id="5384602947126567429"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F988D.png')"><b>😍</b></i></tg-emoji><br/>جهت خرید سرویس ها پیام بدید <tg-emoji emoji-id="5348233632215474973"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i></tg-emoji><br/><tg-emoji emoji-id="5926968513867550458"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29891.png')"><b>☑️</b></i></tg-emoji> <a href="https://t.me/V2rayNGSelAdmin" target="_blank">@V2rayNGSelAdmin</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/V2ngFast/168" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+
+
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">6.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/V2ngFast/168"><time datetime="2025-06-13T09:05:13+00:00" class="time">09:05</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2ngFast/169" data-view="eyJjIjotMjE5MTUyNzkxOCwicCI6IjE2OWciLCJ0IjoxNzUxOTIyNjIxLCJoIjoiM2QyMmMxODcyMjkzODIxZDUzIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/V2ngFast"><i class="tgme_widget_message_user_photo bgcolor6" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/YUNhiLTZnQTtj94zb7a_dEKw00ilaZ5sdXb59p936M9sJBP9Ovw9UXkE_BzCUN7A-FDiqILTS5tBewuCAPJ4z69K992edNWwz2bju2wfw72qmCpcxXv-q6hbN5SYs7_XEXTf3R75XRGrYvPu4z8VSFZlciKiH7gqqEVh-Acte9vGdr47LyopJ695U2kL3jY5ZH_6u3qGCqIrvOLLccx4P-ITE0JXnkihI__VRbHmvaweE2jdoj-rQRsFqEa7JckhDZ7mRpGL28X4gC-Phrs6r9QcTfcNozU2LxxVMYewybStZqlJozHv5ksZKpdktbGBM55R1NItavhtFraQI4KkNQ.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/V2ngFast"><span dir="auto">سرور کانفیگ V2rayNG</span></a></div>
+
+
+<div class="media_supported_cont"><div class="tgme_widget_message_one_media js-message_media"><div class="media_supported_cont"><div class="tgme_widget_message_grouped_wrap js-message_grouped_wrap" data-margin-w="2" data-margin-h="2" style="width:453px;">
+  <div class="tgme_widget_message_grouped js-message_grouped" style="padding-top:149.448%">
+    <div class="tgme_widget_message_grouped_layer js-message_grouped_layer" style="width:453px;height:677px">
+      <a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:0px;top:0px;width:149px;height:224px;margin-right:2px;margin-bottom:2px;background-image:url('https://cdn4.cdn-telegram.org/file/XzQLGa_17YPyuamq85l4u8qtQrxe7GeTMD47NghmVlw6AWPRQMjSD6hGH241OpyaqbCtIbYEMWE6h4Kdz2sQGMKBTcSWj6oNeiS7rXTSrUr-XPhKyuq0IRBvH5TQIZb9hh8utIGERYutatiRf87hfrcjjyUxBYnpEKc0R0HQD3SYHoVuZ29XnU3fTM2uyme9YXq4PYLExGtSg8jWvbo9PsMHsHDXBYx7njRRusBAzhXxKmBsKZ4kFnZoa02o1Sgrz87m5O6L5IAngWGI-LcbvMMS5zX1n5g01mfjS4LH8UpeqdHSr3bAcLGKaNoIUrBoWaQQ5ANjnG7HDLl_GDCCgQ.jpg')" data-ratio="0.44875" href="https://t.me/V2ngFast/169?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:74px;right:75px;">
+    <div class="tgme_widget_message_photo grouped_media" style="left:0;right:0;top:-55px;bottom:-54px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:151px;top:0px;width:149px;height:224px;margin-right:2px;margin-bottom:2px;background-image:url('https://cdn4.cdn-telegram.org/file/KznaOugRNqKWHD3WTpQNzLbhQzmL1q5jz4NXZDeqjSm-LV5WTrG55pWba1qiKk3Pls8tRrki9EOluHlmcqOUcbtZxHc7bf1EQdhaDLR9bNawc8kz8JEDd1xWipiJxnmJMKffnlvJ52d36QbFevXQDCZA-B5yrXHDU0kI7v9_Gu81FcDjJQiAk4frsZiUTa_DlSti_GomyeRm6y_CP2TJGgbwXqQ_4wQDtzXWHKE7GP8IiYihkDamEk9oyvNMlFETPoH4OlNIXbLawuqYGZh-qmP4czUHKE_2i4N4HE34pr7phg0OpXglki-F8_IocXJ-oB7bLenNd8Hj9ICK5bkR7g.jpg')" data-ratio="0.44875" href="https://t.me/V2ngFast/170?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:74px;right:75px;">
+    <div class="tgme_widget_message_photo grouped_media" style="left:0;right:0;top:-55px;bottom:-54px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:302px;top:0px;width:151px;height:224px;margin-right:0px;margin-bottom:2px;background-image:url('https://cdn4.cdn-telegram.org/file/DqKfZXFB2eaEVW-MAv-5DdmLJzyMPAMxJ8Q61eqd4_vG0c6alds0K8zl4m49CWOIApDsWQcdMyi_aXOws5V03URHAkS84cnnFsLsA_aQKX7LdWjlJnxhaaHicos0UhhocnX_n1-fpDHCedNETc3DQdEVLzu7B8XYt1JVZ3NZOvfG-8U2U3sSU-3KHugWtobJ-rlR0Fu-KcjlEwGNHwRkabZvZDZsWNb0XZmSlBxPF-NgFQg2K8Vp-rsO6soQpZUIZMXhH-AGq2rGXI0grQbgIcVv_chwHX4xFBfxoLTPVjduIOkjJaG8onkmwojM8AqM_EkPHMesZ-GD_xLmymFY6Q.jpg')" data-ratio="0.44875" href="https://t.me/V2ngFast/171?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:74px;right:75px;">
+    <div class="tgme_widget_message_photo grouped_media" style="left:0;right:0;top:-57px;bottom:-56px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:0px;top:226px;width:149px;height:224px;margin-right:2px;margin-bottom:2px;background-image:url('https://cdn4.cdn-telegram.org/file/AKpn5zshQyn1_bikB8PjW2CbpLnOrgfigsaAyNAiCcmvrUr5Xn_JAUyAqIT4seWOMerNi-VcQTQIj7twxvYhX4rB01UUH1iQ6U2c5Ho9NepNxf_5wnyRB19HaZqWXI-XzsDCNYtShD8QiVwkyBU8MEZbpq7cU1XQl-eDzQMJjBlvjJoQk-KOsXTHaV0WbuhdzuLPsdwQvQAnSh4HH4_KR_4syP_Cl8JldaP15bgb0POAD3v9cYzIDvXElwM2LD_zFzoSdhixZFAAsTJCkMSLaC5d8ecdOr__SKdGtGLGGIYDPeQqYom_Eve6RjxxSziCElroitjw6Ebla6eFJIXwNQ.jpg')" data-ratio="0.44875" href="https://t.me/V2ngFast/172?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:74px;right:75px;">
+    <div class="tgme_widget_message_photo grouped_media" style="left:0;right:0;top:-55px;bottom:-54px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:151px;top:226px;width:149px;height:224px;margin-right:2px;margin-bottom:2px;background-image:url('https://cdn4.cdn-telegram.org/file/jlPfkfA0-n6d-S4_F8s8PF4Wgza7-on07Tg2vTNTFLU9u5Z8GaQwo0xa75OYh1yYDyodWwM6ltmnxfTqEWHeHbt6A5u7y_noOBimC3BYxO0rzelhk6qshIsASoUC8hZk1ffaqu3et49cpnXXm5l4EmjqXPw6lLs7AfOHeJvRVx6NXasOhUO4HKSgINdHjcj-0bMgfq5WGS69cJm6wJvd3AALH0eVHlFAoWEa1y4S0pobVK-oJNcx5auKq4E2DMFNCHJ38byzfnc3GPvmdwp2QIQ49kk69SezbEoxd-FaLHqx7v3S-XgUn23zOinA9eIWuLXLjbq0wcVp1pVfh9ZE0Q.jpg')" data-ratio="0.44875" href="https://t.me/V2ngFast/173?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:74px;right:75px;">
+    <div class="tgme_widget_message_photo grouped_media" style="left:0;right:0;top:-55px;bottom:-54px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:302px;top:226px;width:151px;height:224px;margin-right:0px;margin-bottom:2px;background-image:url('https://cdn4.cdn-telegram.org/file/CASfDPS38iFxXcZjViVWk0JiNWeJtp77h3IXcgYbeVCTb5Bb48jJuG3Je7n7bykGAtjmVrkM0kVucyvI-wb38wqI1JJ2EsC2-eypixPCW9Cw64fqSSUnPW9guWzCEcrTsB5hxg-fgKCPGgfpQXrWTsM8OZ1jkQ3Ep4xIM1jPB32_kAxKpKGe2S51PrP2ZP8-LwyGxs---xsufFxMlBUdWJRKIKPXK6ELGWSYAHd8zhdA3mcMnc5ci73jwBtHbPYuRWXoy340_7xZuf05m7Pm2W-D16fn-1qVgDloE34E_GCQVNTxx4ZMosU8ZGXdeJRJKcGmZ00Sx9IWHDYMpvjuHA.jpg')" data-ratio="0.44875" href="https://t.me/V2ngFast/174?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:74px;right:75px;">
+    <div class="tgme_widget_message_photo grouped_media" style="left:0;right:0;top:-57px;bottom:-56px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:0px;top:452px;width:150px;height:225px;margin-right:2px;margin-bottom:0px;background-image:url('https://cdn4.cdn-telegram.org/file/aiQZBgXAtxGtMpP61mlMfhPGgna1DVdPIvIKfvW0hlb-BemV2AJLtlbc3xYF-XeK8nI373gyNLHli2wWXgi25PWo0AO-byWW4wAPXEh25uL26sOb0DgPqVz1NQ0j78IygVKpf8nsZDVTxmifHb4Dme_xkLLKYgVN8N546thDiv38QpUBasosWgHdn3Q0YCc4OUFLJSUy0A8Lrf1XhqgLK85giXWZ3kR4AK-bifXaECNw4CnHlsaG8LH_-3I8M5tNroJXDW_QK62YhPqbO7mq70wvQFzhiH_ezZHQe1gPv0kdrvnnAZBztE7naad_7wIjyW8vK5hj36PUcJ4-gz3KWA.jpg')" data-ratio="0.44875" href="https://t.me/V2ngFast/175?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:74px;right:75px;">
+    <div class="tgme_widget_message_photo grouped_media" style="left:0;right:0;top:-55px;bottom:-55px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:152px;top:452px;width:150px;height:225px;margin-right:2px;margin-bottom:0px;background-image:url('https://cdn4.cdn-telegram.org/file/Bf7ih1GnSSmNU_OcogR5V4Vmn9c_1LSZeqriGhh3w_vtLBzefPnENKq9xU6ab3YCFnIWHxo6T34JF4eSj-Gu4ull2i0vzZq-FB84vPAuDoi-lR7o3hah4yCbiwStaxb1SBQLL4D3dzSgLZaan0FQH0zw599ApEuS_TfGEWuzFlQS3aS5HxEUCQWmGpht3hOljqLNFzlFuq5Q88AxZcKhs1AjL9IUmQT5HQSn2GMJwcQRNEFlwt5_GcSsIFCp0Owmw7f-i10O4BP6bCyNY780OXjs7oVvmo7PYrKKDpc43W7ivC31yUWVQ2BV5qYLOrCzFdduBcCqgMpiRCGNZAEJBA.jpg')" data-ratio="0.44875" href="https://t.me/V2ngFast/176?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:74px;right:75px;">
+    <div class="tgme_widget_message_photo grouped_media" style="left:0;right:0;top:-55px;bottom:-55px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:304px;top:452px;width:149px;height:225px;margin-right:0px;margin-bottom:0px;background-image:url('https://cdn4.cdn-telegram.org/file/gin5Q6itmOrtNNcgFeBTW2i0x1Nm9WTvI-Ee6XsCok28XI_UAc4BkhHRNNRcmHTWD_A22mB38dMiXszLaWadec94aTdVvzFRNzFlov8Agm8Fj443yvakB_xz60JHzTwZzDfjdtv19Dx-TBfYhwerQcfgwNo5NfvbeduYPR6zNLLBGc67yeh5IhqXg_m2OimpRkThnJO3E3C9M7wsYdHJFsh3BOSxKYlu0rMACG_ibcoihwn6X-4UEJT6z_16tOoHZLsc4HXW0Ulqb0vQK0AOIaldXoUrashyls2163lMa7neShZ5WTxHSL1uZGLRvFmFIPqcXqsj_cAWTnosF8k7vQ.jpg')" data-ratio="0.44875" href="https://t.me/V2ngFast/177?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:74px;right:75px;">
+    <div class="tgme_widget_message_photo grouped_media" style="left:0;right:0;top:-54px;bottom:-54px;"></div>
+  </div>
+</a>
+    </div>
+  </div>
+</div><div class="tgme_widget_message_text js-message_text" dir="auto"><b>گوشه ای از</b> <a href="?q=%23%D8%B1%D8%B6%D8%A7%DB%8C%D8%AA">#رضایت</a> <b>مشتریان عزیز از خرید سرویس های ما که با وجود اختلال و محدودیت اینترنت ها به صورت پر سرعت متصل هستند</b> <tg-emoji emoji-id="5873124579051836559"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji><br/><br/><u>جهت خرید سرویس ها پیام بدید</u> <tg-emoji emoji-id="5389100353411106786"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AC87.png')"><b>⬇️</b></i></tg-emoji><br/><tg-emoji emoji-id="5926968513867550458"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29891.png')"><b>☑️</b></i></tg-emoji> <a href="https://t.me/V2rayNGSelAdmin" target="_blank">@V2rayNGSelAdmin</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/V2ngFast/169?single" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/V2ngFast/169" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+
+
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">4.6K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/V2ngFast/169"><time datetime="2025-06-15T15:46:21+00:00" class="time">15:46</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div>
+    </section>
+  </div>
+</main>
+    <script src="//telegram.org/js/jquery.min.js"></script>
+    <script src="//telegram.org/js/jquery-ui.min.js"></script>
+    <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
+<script src="//telegram.org/js/tgsticker.js?31"></script>
+
+    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/telegram-web.js?14"></script>
+    <script>TWeb.init();
+</script>
+    
+  </body>
+</html>
+<!-- page generated in 95.5ms -->
