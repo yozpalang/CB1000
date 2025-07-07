@@ -17,7 +17,7 @@ error_reporting(E_ALL);
 require_once __DIR__ . '/functions.php';
 
 // --- Configuration Constants ---
-const INPUT_FILE = __DIR__ . '/channelsAssets.json';
+const INPUT_FILE = __DIR__ . '/channelsData/channelsAssets.json';
 const FINAL_DIR = __DIR__ . '/channelsData';
 const TEMP_DIR = __DIR__ . '/channelsData_temp';
 const LOGOS_DIR_NAME = 'logos';
