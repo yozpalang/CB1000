@@ -23,8 +23,8 @@ jobs:
           
       - name: Execute PHP script
         run: |
-          php get.php
           php channelsAssets.php
+          php get.php
           php duplicate.php
           php sort.php
           php toSingbox.php
@@ -53,6 +53,7 @@ jobs:
         run: |
           git pull
           cd lite
+          php channelsAssets.php
           php get.php
           php duplicate.php
           php sort.php
