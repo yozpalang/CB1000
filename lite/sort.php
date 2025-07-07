@@ -48,6 +48,10 @@ echo "2. Sorting configs by type..." . PHP_EOL;
 $sortedConfigs = [];
 
 foreach ($configsArray as $config) {
+    $trimmedConfig = trim($config);
+    if (empty($trimmedConfig)) {
+        continue;
+    }
     $configType = detect_type($config);
 
     // Skip any malformed or unknown lines
