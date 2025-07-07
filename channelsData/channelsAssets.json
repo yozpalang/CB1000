@@ -719,7 +719,6 @@
     },
     "configshubplus": {
         "types": [
-            "vmess",
             "vless",
             "trojan",
             "ss"
@@ -3955,7 +3954,6 @@
     },
     "proxy_mtproto_vpns_free": {
         "types": [
-            "vmess",
             "vless",
             "ss"
         ],
@@ -5388,10 +5386,7 @@
         "logo": ""
     },
     "v2ray_cartel": {
-        "types": [
-            "vless",
-            "ss"
-        ],
+        "types": [],
         "title": "V2ray Cartel | Vpn | Free | Proxy | سرور رایگان | کانفیگ | پروکسی",
         "logo": "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/v2ray_cartel.jpg"
     },
@@ -5710,6 +5705,7 @@
     },
     "v2raych": {
         "types": [
+            "vmess",
             "vless",
             "trojan",
             "ss"
@@ -5784,7 +5780,6 @@
     },
     "v2rayfree": {
         "types": [
-            "vmess",
             "vless",
             "ss"
         ],

@@ -1,0 +1,93 @@
+mixed-port: 7890
+allow-lan: true
+mode: rule
+log-level: error
+ipv6: true
+external-controller: 127.0.0.1:9090
+profile:
+  store-selected: true
+  store-fake-ip: true
+dns:
+  enable: true
+  ipv6: true
+  default-nameserver: [1.1.1.1, 8.8.8.8]
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
+  nameserver: [8.8.4.4, 1.0.0.1, "https://1.0.0.1/dns-query"]
+
+proxies:
+  - {"name":"🇨🇳 CN | 🔴 | vmess | @mftizi | 0","type":"vmess","server":"183.236.51.23","port":53002,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳 CN | 🔴 | vmess | @mftizi | 2","type":"vmess","server":"120.232.153.27","port":58831,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳 CN | 🔴 | vmess | @mftizi | 3","type":"vmess","server":"183.236.48.163","port":58831,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳 CN | 🔴 | vmess | @mftizi | 4","type":"vmess","server":"120.232.153.63","port":40972,"cipher":"auto","uuid":"770ee730-2450-4e3c-a6c6-3932bd32afbd","alterId":"64","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳 CN | 🔴 | vmess | @mftizi | 5","type":"vmess","server":"183.236.51.23","port":46602,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳 CN | 🔴 | vmess | @mftizi | 9","type":"vmess","server":"120.234.102.229","port":52908,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳 CN | 🔴 | vmess | @mftizi | 14","type":"vmess","server":"183.236.51.23","port":48109,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳 CN | 🔴 | vmess | @mftizi | 15","type":"vmess","server":"120.232.153.123","port":45402,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸 US | 🔴 | vmess | @mftizi | 16","type":"vmess","server":"23.224.152.62","port":31909,"cipher":"auto","uuid":"a5e99fc4-5b87-4312-aa8a-52cad1971b92","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇯🇵 JP | 🔴 | vmess | @mftizi | 17","type":"vmess","server":"45.159.51.116","port":48019,"cipher":"auto","uuid":"c06797d5-fa41-4b48-b132-d268d2acb302","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳 CN | 🔴 | vmess | @mftizi | 18","type":"vmess","server":"183.236.51.38","port":49302,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇩🇪 DE | 🔴 | vmess | @Hope_Net | 0","type":"vmess","server":"138.199.162.120","port":100,"cipher":"auto","uuid":"1889d9ef-9d58-4427-bb3e-a08810c214eb","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
+
+proxy-groups:
+  - name: PSG-MANUAL
+    type: select
+    proxies:
+      - PSG-AUTO
+      - PSG-FALLBACK
+    - '🇨🇳 CN | 🔴 | vmess | @mftizi | 0'
+    - '🇨🇳 CN | 🔴 | vmess | @mftizi | 2'
+    - '🇨🇳 CN | 🔴 | vmess | @mftizi | 3'
+    - '🇨🇳 CN | 🔴 | vmess | @mftizi | 4'
+    - '🇨🇳 CN | 🔴 | vmess | @mftizi | 5'
+    - '🇨🇳 CN | 🔴 | vmess | @mftizi | 9'
+    - '🇨🇳 CN | 🔴 | vmess | @mftizi | 14'
+    - '🇨🇳 CN | 🔴 | vmess | @mftizi | 15'
+    - '🇺🇸 US | 🔴 | vmess | @mftizi | 16'
+    - '🇯🇵 JP | 🔴 | vmess | @mftizi | 17'
+    - '🇨🇳 CN | 🔴 | vmess | @mftizi | 18'
+    - '🇩🇪 DE | 🔴 | vmess | @Hope_Net | 0'
+
+  - name: PSG-AUTO
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    proxies:
+    - '🇨🇳 CN | 🔴 | vmess | @mftizi | 0'
+    - '🇨🇳 CN | 🔴 | vmess | @mftizi | 2'
+    - '🇨🇳 CN | 🔴 | vmess | @mftizi | 3'
+    - '🇨🇳 CN | 🔴 | vmess | @mftizi | 4'
+    - '🇨🇳 CN | 🔴 | vmess | @mftizi | 5'
+    - '🇨🇳 CN | 🔴 | vmess | @mftizi | 9'
+    - '🇨🇳 CN | 🔴 | vmess | @mftizi | 14'
+    - '🇨🇳 CN | 🔴 | vmess | @mftizi | 15'
+    - '🇺🇸 US | 🔴 | vmess | @mftizi | 16'
+    - '🇯🇵 JP | 🔴 | vmess | @mftizi | 17'
+    - '🇨🇳 CN | 🔴 | vmess | @mftizi | 18'
+    - '🇩🇪 DE | 🔴 | vmess | @Hope_Net | 0'
+
+  - name: PSG-FALLBACK
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    proxies:
+    - '🇨🇳 CN | 🔴 | vmess | @mftizi | 0'
+    - '🇨🇳 CN | 🔴 | vmess | @mftizi | 2'
+    - '🇨🇳 CN | 🔴 | vmess | @mftizi | 3'
+    - '🇨🇳 CN | 🔴 | vmess | @mftizi | 4'
+    - '🇨🇳 CN | 🔴 | vmess | @mftizi | 5'
+    - '🇨🇳 CN | 🔴 | vmess | @mftizi | 9'
+    - '🇨🇳 CN | 🔴 | vmess | @mftizi | 14'
+    - '🇨🇳 CN | 🔴 | vmess | @mftizi | 15'
+    - '🇺🇸 US | 🔴 | vmess | @mftizi | 16'
+    - '🇯🇵 JP | 🔴 | vmess | @mftizi | 17'
+    - '🇨🇳 CN | 🔴 | vmess | @mftizi | 18'
+    - '🇩🇪 DE | 🔴 | vmess | @Hope_Net | 0'
+
+rules:
+  - DOMAIN-SUFFIX,ir,DIRECT
+  - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
+  - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
+  - GEOIP,IR,DIRECT
+  - MATCH,PSG-MANUAL
