@@ -130,17 +130,3 @@ if (is_dir(FINAL_DIR)) {
 rename(TEMP_DIR, FINAL_DIR);
 
 echo "Done! Channel assets have been successfully updated." . PHP_EOL;
-
-/**
- * A helper function to print a clean, overwriting progress bar.
- * (This could also live in your functions.php)
- */
-function print_progress(int $current, int $total, string $message = ''): void
-{
-    if ($total == 0) return;
-    $percentage = ($current / $total) * 100;
-    $bar_length = 50;
-    $filled_length = (int)($bar_length * $current / $total);
-    $bar = str_repeat('=', $filled_length) . str_repeat(' ', $bar_length - $filled_length);
-    printf("\r%s [%s] %d%% (%d/%d)", $message, $bar, $percentage, $current, $total);
-}
