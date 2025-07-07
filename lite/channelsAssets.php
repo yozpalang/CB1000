@@ -17,7 +17,7 @@ error_reporting(E_ALL);
 require_once __DIR__ . '/functions.php';
 
 // --- Configuration Constants ---
-const INPUT_FILE = __DIR__ . '/channelsAssets.json';
+const INPUT_FILE = __DIR__ . '/channelsData/channelsAssets.json';
 const FINAL_ASSETS_DIR = __DIR__ . '/channelsData';
 const TEMP_BUILD_DIR = __DIR__ . '/temp_build'; // A single temp dir for all artifacts
 const HTML_CACHE_DIR = TEMP_BUILD_DIR . '/html_cache';
