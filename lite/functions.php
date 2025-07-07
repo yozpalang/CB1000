@@ -574,3 +574,122 @@ function print_progress(int $current, int $total, string $message = ''): void
     $bar = str_repeat('=', $filled_length) . str_repeat(' ', $bar_length - $filled_length);
     printf("\r%s [%s] %d%% (%d/%d)", $message, $bar, $percentage, $current, $total);
 }
+
+// #############################################################################
+// The Core Abstraction: A Wrapper Class for Different Config Types
+// #############################################################################
+
+class ConfigWrapper
+{
+    private ?array $decoded;
+    private string $type;
+
+    public function __construct(string $config_string)
+    {
+        $this->type = detect_type($config_string) ?? 'unknown';
+        $this->decoded = configParse($config_string);
+    }
+
+    public function isValid(): bool
+    {
+        return $this->decoded !== null;
+    }
+
+    public function getType(): string
+    {
+        return $this->type;
+    }
+
+    public function getTag(): string
+    {
+        $field = match($this->type) {
+            'vmess' => 'ps',
+            'ss' => 'name',
+            default => 'hash',
+        };
+        return urldecode($this->decoded[$field] ?? 'Unknown Tag');
+    }
+
+    public function getServer(): string
+    {
+        return match($this->type) {
+            'vmess' => $this->decoded['add'],
+            'ss' => $this->decoded['server_address'],
+            default => $this->decoded['hostname'],
+        };
+    }
+
+    public function getPort(): int
+    {
+        $port = match($this->type) {
+            'ss' => $this->decoded['server_port'],
+            default => $this->decoded['port'],
+        };
+        return (int)$port;
+    }
+
+    public function getUuid(): string
+    {
+        return match($this->type) {
+            'vmess' => $this->decoded['id'],
+            'vless', 'trojan' => $this->decoded['username'],
+            'tuic' => $this->decoded['username'],
+            default => '',
+        };
+    }
+
+    public function getPassword(): string
+    {
+        return match($this->type) {
+            'trojan' => $this->decoded['username'],
+            'ss' => $this->decoded['password'],
+            'tuic' => $this->decoded['pass'],
+            'hy2' => $this->decoded['username'],
+            default => '',
+        };
+    }
+
+    public function getSni(): string
+    {
+        return match($this->type) {
+            'vmess' => $this->decoded['sni'] ?? $this->getServer(),
+            default => $this->decoded['params']['sni'] ?? $this->getServer(),
+        };
+    }
+
+    public function getTransportType(): ?string
+    {
+        return match($this->type) {
+            'vmess' => $this->decoded['net'],
+            default => $this->decoded['params']['type'] ?? null,
+        };
+    }
+    
+    public function getPath(): string
+    {
+        $path = match($this->type) {
+            'vmess' => $this->decoded['path'] ?? '/',
+            default => $this->decoded['params']['path'] ?? '/',
+        };
+        return '/' . ltrim($path, '/');
+    }
+
+    public function getServiceName(): string
+    {
+        return match($this->type) {
+            'vmess' => $this->decoded['path'] ?? '',
+            default => $this->decoded['params']['serviceName'] ?? '',
+        };
+    }
+
+    // Pass through direct access to the decoded array for complex cases
+    public function get(string $key, $default = null)
+    {
+        return $this->decoded[$key] ?? $default;
+    }
+    
+    public function getParam(string $key, $default = null)
+    {
+        return $this->decoded['params'][$key] ?? $default;
+    }
+}
