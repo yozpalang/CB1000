@@ -22,6 +22,7 @@ const HTML_CACHE_DIR = __DIR__ . '/channelsData/html_cache';
 const OUTPUT_DIR = __DIR__ . '/subscriptions';
 const LOCATION_DIR = OUTPUT_DIR . '/location';
 const FINAL_CONFIG_FILE = __DIR__ . '/config.txt';
+const CONFIGS_TO_PROCESS_PER_SOURCE = 40; // Process the latest 40 configs from each source.
 
 // --- 1. Load Source Data and Sanity Check ---
 
