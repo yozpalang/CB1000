@@ -20,21 +20,21 @@ proxies:
 ##PROXIES##
 
 proxy-groups:
-  - name: TVC-MANUAL
+  - name: PSG-MANUAL
     type: select
     proxies:
-      - TVC-AUTO
-      - TVC-FALLBACK
+      - PSG-AUTO
+      - PSG-FALLBACK
 ##PROXY_NAMES##
 
-  - name: TVC-AUTO
+  - name: PSG-AUTO
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
 ##PROXY_NAMES##
 
-  - name: TVC-FALLBACK
+  - name: PSG-FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
@@ -46,4 +46,4 @@ rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
   - GEOIP,IR,DIRECT
-  - MATCH,TVC-MANUAL
+  - MATCH,PSG-MANUAL
