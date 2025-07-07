@@ -161,6 +161,10 @@ mkdir(LOCATION_DIR . '/normal', 0775, true);
 mkdir(LOCATION_DIR . '/base64', 0775, true);
 
 foreach ($locationBased as $location => $configs) {
+    // If the location key is empty or just whitespace, skip this iteration.
+    if (empty(trim($location))) {
+        continue;
+    }
     $plainText = implode(PHP_EOL, $configs);
     file_put_contents(LOCATION_DIR . '/normal/' . $location, $plainText);
     file_put_contents(LOCATION_DIR . '/base64/' . $location, base64_encode($plainText));
