@@ -265,18 +265,29 @@ function detect_type(string $input): ?string
 }
 
 /**
- * Extracts all links of a specific protocol type from a larger string.
+ * Extracts all valid proxy links from a given text based on a master list of types.
+ * This pattern is designed to be robust and avoid partial matches.
  *
- * @param string $inputString The text to search within.
- * @param string $configType The protocol type (e.g., "vmess").
- * @return array An array of found links.
+ * @param string $text The input text (e.g., HTML content) to search within.
+ * @return array An array of found proxy links.
  */
-function extractLinksByType(string $inputString, string $configType): array
+function extractLinksByType(string $text): array
 {
-    // Use preg_quote to safely handle the configType in regex.
-    $pattern = '/' . preg_quote($configType, '/') . ':\/\/[^"\'\s]+/';
-    preg_match_all($pattern, $inputString, $matches);
+    // Master list of all valid protocol schemes your project supports.
+    $valid_types = ['vmess', 'vless', 'trojan', 'ss', 'tuic', 'hy2', 'hysteria'];
     
+    // Build the core part of the pattern: (vmess|vless|trojan|...)
+    $type_pattern = implode('|', $valid_types);
+    
+    // The final regex pattern, translated directly from the JavaScript version.
+    // We use '/i' for case-insensitivity. preg_match_all is inherently "global".
+    $pattern = "/(?:{$type_pattern}):\\/\\/[^\\s\"']*(?=\\s|<|>|$)/i";
+    
+    // Execute the regex and find all matches.
+    preg_match_all($pattern, $text, $matches);
+    
+    // $matches[0] contains the array of full string matches.
+    // If no matches are found, it will be an empty array, which is the desired outcome.
     return $matches[0] ?? [];
 }
 
