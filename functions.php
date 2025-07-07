@@ -313,7 +313,7 @@ function configParse(string $input): ?array
                 'hostname' => $parsedUrl['host'] ?? '',
                 'port' => $parsedUrl['port'] ?? '',
                 'params' => $params,
-                'hash' => isset($parsedUrl['fragment']) ? rawurldecode($parsedUrl['fragment']) : 'TVC' . getRandomName(),
+                'hash' => isset($parsedUrl['fragment']) ? rawurldecode($parsedUrl['fragment']) : 'PSG' . getRandomName(),
             ];
 
             if ($configType === 'tuic') {
@@ -341,7 +341,7 @@ function configParse(string $input): ?array
                 'password' => $password,
                 'server_address' => $parsedUrl['host'] ?? '',
                 'server_port' => $parsedUrl['port'] ?? '',
-                'name' => isset($parsedUrl['fragment']) ? rawurldecode($parsedUrl['fragment']) : 'TVC' . getRandomName(),
+                'name' => isset($parsedUrl['fragment']) ? rawurldecode($parsedUrl['fragment']) : 'PSG' . getRandomName(),
             ];
             
         default:
