@@ -3,7 +3,8 @@
 declare(strict_types=1);
 
 /**
- * This script updates channel assets (title, logo) by scraping public Telegram pages.
+ * This script updates channel assets (title, logo) and dynamically discovers
+ * the types of proxy configurations (vmess, vless, etc.) present in each channel.
  * It performs all network requests in parallel for maximum speed and uses an atomic
  * write method to ensure data integrity.
  */
@@ -13,15 +14,24 @@ ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 
-// This script needs the parallel fetching function from our previous optimizations.
 require_once __DIR__ . '/functions.php';
 
 // --- Configuration Constants ---
 const INPUT_FILE = __DIR__ . '/channelsAssets.json';
 const FINAL_DIR = __DIR__ . '/channelsData';
-const TEMP_DIR = __DIR__ . '/channelsData_temp'; // Temporary directory for atomic writes
-const LOGOS_DIR_NAME = 'logos'; // The name of the subdirectory for logos
-const GITHUB_LOGO_BASE_URL = 'https://raw.githubusercontent.com/itsyebekhe/PSG/main/channelsData/logos';
+const TEMP_DIR = __DIR__ . '/channelsData_temp';
+const LOGOS_DIR_NAME = 'logos';
+const GITHUB_LOGO_BASE_URL = 'https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos';
+
+// Define all possible protocol types that the script should look for.
+const ALL_POSSIBLE_TYPES = [
+    'vmess', 'vless', 'trojan', 'ss', 'tuic', 'hy2', 'hysteria'
+];
+
+
+// #############################################################################
+// Helper Functions (assuming fetch_multiple_urls_parallel and deleteFolder are in functions.php)
+// #############################################################################
 
 // --- 1. Initial Checks and Setup ---
 
@@ -31,16 +41,16 @@ if (!file_exists(INPUT_FILE)) {
     die('Error: channelsAssets.json not found.' . PHP_EOL);
 }
 
-$sourcesArray = json_decode(file_get_contents(INPUT_FILE), true);
+$sourcesData = json_decode(file_get_contents(INPUT_FILE), true);
 if (json_last_error() !== JSON_ERROR_NONE) {
     die('Error: Failed to decode channelsAssets.json. Invalid JSON.' . PHP_EOL);
 }
+// Get just the source names (the keys) from the input file
+$sourcesToProcess = array_keys($sourcesData);
 
-// Clean up any old temp directory in case of a previously failed run.
 if (is_dir(TEMP_DIR)) {
     deleteFolder(TEMP_DIR);
 }
-// Create the temporary directory structure.
 mkdir(TEMP_DIR . '/' . LOGOS_DIR_NAME, 0775, true);
 
 
@@ -49,54 +59,61 @@ mkdir(TEMP_DIR . '/' . LOGOS_DIR_NAME, 0775, true);
 echo "2. Fetching all channel HTML pages in parallel..." . PHP_EOL;
 
 $urls_to_fetch_html = [];
-foreach ($sourcesArray as $source => $data) {
+foreach ($sourcesToProcess as $source) {
     $urls_to_fetch_html[$source] = "https://t.me/s/" . $source;
 }
 
 $fetched_html_data = fetch_multiple_urls_parallel($urls_to_fetch_html);
 
 
-// --- 3. Parse HTML, Prepare Logo URLs, and Build Channel Data ---
+// --- 3. Parse HTML, Discover Types, and Prepare Logo URLs ---
 
-echo "\n3. Parsing HTML and preparing logo download list..." . PHP_EOL;
+echo "\n3. Parsing HTML, discovering config types, and preparing logo download list..." . PHP_EOL;
 
 $channelArray = [];
 $logo_urls_to_fetch = [];
-$totalSources = count($sourcesArray);
+$totalSources = count($sourcesToProcess);
 $processedCount = 0;
 
-foreach ($sourcesArray as $source => $data) {
-    print_progress(++$processedCount, $totalSources, 'Parsing:');
-
-    // Use original types from input file
-    $channelArray[$source]['types'] = $data['types'];
+foreach ($sourcesToProcess as $source) {
+    print_progress(++$processedCount, $totalSources, 'Processing:');
 
     // Check if HTML for this source was successfully fetched
     if (!isset($fetched_html_data[$source])) {
-        // Set default values if fetch failed
-        $channelArray[$source]['title'] = $data['title'] ?? 'Unknown (Fetch Failed)';
-        $channelArray[$source]['logo'] = $data['logo'] ?? '';
+        // If fetch failed, carry over old data as a fallback
+        echo "\nWarning: Failed to fetch HTML for '{$source}'. Carrying over old data." . PHP_EOL;
+        $channelArray[$source] = $sourcesData[$source];
         continue;
     }
 
     $html = $fetched_html_data[$source];
     
-    // Extract title and image URL using regular expressions
+    // ** DYNAMIC TYPE DISCOVERY LOGIC **
+    $foundTypes = [];
+    foreach (ALL_POSSIBLE_TYPES as $type) {
+        // A simple string search is very fast and effective for this purpose.
+        if (str_contains($html, "{$type}://")) {
+            $foundTypes[] = $type;
+        }
+    }
+    // If no types are found, we can assign an empty array or handle as needed.
+    $channelArray[$source]['types'] = $foundTypes;
+
+    // --- Asset (Title & Logo) Extraction Logic (remains the same) ---
     preg_match('#<meta property="twitter:title" content="(.*?)">#', $html, $title_match);
     preg_match('#<meta property="twitter:image" content="(.*?)">#', $html, $image_match);
-
-    // Set title with a fallback
+    
     $channelArray[$source]['title'] = $title_match[1] ?? 'Unknown Title';
     
-    // Set the final logo URL and add the real URL to our download queue
     if (isset($image_match[1]) && !empty($image_match[1])) {
         $logo_urls_to_fetch[$source] = $image_match[1];
         $channelArray[$source]['logo'] = GITHUB_LOGO_BASE_URL . '/' . $source . ".jpg";
     } else {
-        $channelArray[$source]['logo'] = ''; // No logo found
+        $channelArray[$source]['logo'] = '';
     }
 }
 echo PHP_EOL;
+
 
 // --- 4. Fetch All Logo Images in Parallel ---
 
@@ -104,7 +121,6 @@ if (!empty($logo_urls_to_fetch)) {
     echo "4. Fetching " . count($logo_urls_to_fetch) . " logo images in parallel..." . PHP_EOL;
     $fetched_logo_data = fetch_multiple_urls_parallel($logo_urls_to_fetch);
 
-    // Save the downloaded logos to the temporary directory
     foreach ($fetched_logo_data as $source => $imageData) {
         file_put_contents(TEMP_DIR . '/' . LOGOS_DIR_NAME . '/' . $source . '.jpg', $imageData);
     }
@@ -118,15 +134,12 @@ if (!empty($logo_urls_to_fetch)) {
 
 echo "5. Finalizing data and writing output files..." . PHP_EOL;
 
-// Save the new channel data array to the temporary directory
 $jsonOutput = json_encode($channelArray, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 file_put_contents(TEMP_DIR . '/channelsAssets.json', $jsonOutput);
 
-// **Atomic Operation**: Replace the old directory with the new one.
-// This ensures that we don't end up with a corrupt state if the script fails.
 if (is_dir(FINAL_DIR)) {
     deleteFolder(FINAL_DIR);
 }
 rename(TEMP_DIR, FINAL_DIR);
 
-echo "Done! Channel assets have been successfully updated." . PHP_EOL;
+echo "Done! Channel assets have been successfully updated with dynamically discovered types." . PHP_EOL;
