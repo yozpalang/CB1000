@@ -105,23 +105,23 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇷 FR | 🟢 | ss | @free1ss | 0",
-                "🇳🇱 NL | 🟢 | ss | @free1ss | 1",
-                "🇩🇪 DE | 🟢 | ss | @free1ss | 2",
-                "🇳🇱 NL | 🟢 | ss | @free1ss | 3",
-                "🇩🇪 DE | 🟢 | ss | @free1ss | 4",
-                "🇸🇬 SG | 🟢 | ss | @free1ss | 5",
-                "🇳🇱 NL | 🟢 | ss | @free1ss | 6",
-                "🇩🇪 DE | 🟢 | ss | @free1ss | 7",
-                "🇳🇱 NL | 🟢 | ss | @free1ss | 8",
-                "🇸🇬 SG | 🟢 | ss | @free1ss | 9",
-                "🇳🇱 NL | 🟢 | ss | @free1ss | 10",
-                "🇯🇵 JP | 🟢 | ss | @free1ss | 12",
-                "🇷🇺 RU | 🟢 | ss | @free1ss | 13",
-                "🇮🇳 IN | 🟢 | ss | @free1ss | 14",
-                "🇸🇬 SG | 🟢 | ss | @free1ss | 15",
-                "🇫🇮 FI | 🟢 | ss | @free1ss | 17",
-                "🇪🇸 ES | 🟢 | ss | @free1ss | 18",
+                "🇳🇱 NL | 🟢 | ss | @free1ss | 0",
+                "🇩🇪 DE | 🟢 | ss | @free1ss | 1",
+                "🇳🇱 NL | 🟢 | ss | @free1ss | 2",
+                "🇩🇪 DE | 🟢 | ss | @free1ss | 3",
+                "🇸🇬 SG | 🟢 | ss | @free1ss | 4",
+                "🇳🇱 NL | 🟢 | ss | @free1ss | 5",
+                "🇩🇪 DE | 🟢 | ss | @free1ss | 6",
+                "🇳🇱 NL | 🟢 | ss | @free1ss | 7",
+                "🇸🇬 SG | 🟢 | ss | @free1ss | 8",
+                "🇳🇱 NL | 🟢 | ss | @free1ss | 9",
+                "🇯🇵 JP | 🟢 | ss | @free1ss | 11",
+                "🇷🇺 RU | 🟢 | ss | @free1ss | 12",
+                "🇮🇳 IN | 🟢 | ss | @free1ss | 13",
+                "🇸🇬 SG | 🟢 | ss | @free1ss | 14",
+                "🇫🇮 FI | 🟢 | ss | @free1ss | 15",
+                "🇪🇸 ES | 🟢 | ss | @free1ss | 16",
+                "🇳🇱 NL | 🟢 | ss | @free1ss | 17",
                 "🇺🇸 US | 🟢 | ss | @key_outline | 0",
                 "🇫🇷 FR | 🟢 | ss | @key_outline | 1",
                 "🇬🇧 GB | 🟢 | ss | @key_outline | 2",
@@ -210,12 +210,12 @@
                 "🇬🇧 GB | 🟢 | ss | @vipufovpn | 1",
                 "🇬🇧 GB | 🟢 | ss | @vipufovpn | 2",
                 "🇬🇧 GB | 🟢 | ss | @vipufovpn | 3",
-                "🇫🇷 FR | 🟢 | ss | @vipufovpn | 5",
+                "🇫🇷 FR | 🟢 | ss | @vipufovpn | 4",
+                "🇵🇱 PL | 🟢 | ss | @vipufovpn | 5",
                 "🇵🇱 PL | 🟢 | ss | @vipufovpn | 6",
                 "🇵🇱 PL | 🟢 | ss | @vipufovpn | 7",
                 "🇵🇱 PL | 🟢 | ss | @vipufovpn | 8",
                 "🇵🇱 PL | 🟢 | ss | @vipufovpn | 9",
-                "🇵🇱 PL | 🟢 | ss | @vipufovpn | 10",
                 "🇬🇧 GB | 🟢 | ss | @vmess_iran | 0",
                 "🇨🇳 CN | 🟢 | ss | @wxdy666 | 0",
                 "🇬🇧 GB | 🟢 | ss | @xivpn | 0"
@@ -225,23 +225,23 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇷 FR | 🟢 | ss | @free1ss | 0",
-                "🇳🇱 NL | 🟢 | ss | @free1ss | 1",
-                "🇩🇪 DE | 🟢 | ss | @free1ss | 2",
-                "🇳🇱 NL | 🟢 | ss | @free1ss | 3",
-                "🇩🇪 DE | 🟢 | ss | @free1ss | 4",
-                "🇸🇬 SG | 🟢 | ss | @free1ss | 5",
-                "🇳🇱 NL | 🟢 | ss | @free1ss | 6",
-                "🇩🇪 DE | 🟢 | ss | @free1ss | 7",
-                "🇳🇱 NL | 🟢 | ss | @free1ss | 8",
-                "🇸🇬 SG | 🟢 | ss | @free1ss | 9",
-                "🇳🇱 NL | 🟢 | ss | @free1ss | 10",
-                "🇯🇵 JP | 🟢 | ss | @free1ss | 12",
-                "🇷🇺 RU | 🟢 | ss | @free1ss | 13",
-                "🇮🇳 IN | 🟢 | ss | @free1ss | 14",
-                "🇸🇬 SG | 🟢 | ss | @free1ss | 15",
-                "🇫🇮 FI | 🟢 | ss | @free1ss | 17",
-                "🇪🇸 ES | 🟢 | ss | @free1ss | 18",
+                "🇳🇱 NL | 🟢 | ss | @free1ss | 0",
+                "🇩🇪 DE | 🟢 | ss | @free1ss | 1",
+                "🇳🇱 NL | 🟢 | ss | @free1ss | 2",
+                "🇩🇪 DE | 🟢 | ss | @free1ss | 3",
+                "🇸🇬 SG | 🟢 | ss | @free1ss | 4",
+                "🇳🇱 NL | 🟢 | ss | @free1ss | 5",
+                "🇩🇪 DE | 🟢 | ss | @free1ss | 6",
+                "🇳🇱 NL | 🟢 | ss | @free1ss | 7",
+                "🇸🇬 SG | 🟢 | ss | @free1ss | 8",
+                "🇳🇱 NL | 🟢 | ss | @free1ss | 9",
+                "🇯🇵 JP | 🟢 | ss | @free1ss | 11",
+                "🇷🇺 RU | 🟢 | ss | @free1ss | 12",
+                "🇮🇳 IN | 🟢 | ss | @free1ss | 13",
+                "🇸🇬 SG | 🟢 | ss | @free1ss | 14",
+                "🇫🇮 FI | 🟢 | ss | @free1ss | 15",
+                "🇪🇸 ES | 🟢 | ss | @free1ss | 16",
+                "🇳🇱 NL | 🟢 | ss | @free1ss | 17",
                 "🇺🇸 US | 🟢 | ss | @key_outline | 0",
                 "🇫🇷 FR | 🟢 | ss | @key_outline | 1",
                 "🇬🇧 GB | 🟢 | ss | @key_outline | 2",
@@ -330,12 +330,12 @@
                 "🇬🇧 GB | 🟢 | ss | @vipufovpn | 1",
                 "🇬🇧 GB | 🟢 | ss | @vipufovpn | 2",
                 "🇬🇧 GB | 🟢 | ss | @vipufovpn | 3",
-                "🇫🇷 FR | 🟢 | ss | @vipufovpn | 5",
+                "🇫🇷 FR | 🟢 | ss | @vipufovpn | 4",
+                "🇵🇱 PL | 🟢 | ss | @vipufovpn | 5",
                 "🇵🇱 PL | 🟢 | ss | @vipufovpn | 6",
                 "🇵🇱 PL | 🟢 | ss | @vipufovpn | 7",
                 "🇵🇱 PL | 🟢 | ss | @vipufovpn | 8",
                 "🇵🇱 PL | 🟢 | ss | @vipufovpn | 9",
-                "🇵🇱 PL | 🟢 | ss | @vipufovpn | 10",
                 "🇬🇧 GB | 🟢 | ss | @vmess_iran | 0",
                 "🇨🇳 CN | 🟢 | ss | @wxdy666 | 0",
                 "🇬🇧 GB | 🟢 | ss | @xivpn | 0"
@@ -361,15 +361,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇫🇷 FR | 🟢 | ss | @free1ss | 0",
-            "type": "shadowsocks",
-            "server": "81.19.137.222",
-            "server_port": 57456,
-            "method": "chacha20-ietf-poly1305",
-            "password": "a58fa62b4944ddbf"
-        },
-        {
-            "tag": "🇳🇱 NL | 🟢 | ss | @free1ss | 1",
+            "tag": "🇳🇱 NL | 🟢 | ss | @free1ss | 0",
             "type": "shadowsocks",
             "server": "193.29.139.157",
             "server_port": 8080,
@@ -377,7 +369,7 @@
             "password": "cvII85TrW6n0OGyfpHVS1u"
         },
         {
-            "tag": "🇩🇪 DE | 🟢 | ss | @free1ss | 2",
+            "tag": "🇩🇪 DE | 🟢 | ss | @free1ss | 1",
             "type": "shadowsocks",
             "server": "94.159.96.245",
             "server_port": 11902,
@@ -385,7 +377,7 @@
             "password": "1HHikeFxGXavR6c08XczIR"
         },
         {
-            "tag": "🇳🇱 NL | 🟢 | ss | @free1ss | 3",
+            "tag": "🇳🇱 NL | 🟢 | ss | @free1ss | 2",
             "type": "shadowsocks",
             "server": "178.208.78.170",
             "server_port": 23822,
@@ -393,7 +385,7 @@
             "password": "Lc0jULI7sKNUAdgUBNt86b"
         },
         {
-            "tag": "🇩🇪 DE | 🟢 | ss | @free1ss | 4",
+            "tag": "🇩🇪 DE | 🟢 | ss | @free1ss | 3",
             "type": "shadowsocks",
             "server": "138.124.115.157",
             "server_port": 1080,
@@ -401,7 +393,7 @@
             "password": "M-nffO40KlclwbCX9CV1DQ"
         },
         {
-            "tag": "🇸🇬 SG | 🟢 | ss | @free1ss | 5",
+            "tag": "🇸🇬 SG | 🟢 | ss | @free1ss | 4",
             "type": "shadowsocks",
             "server": "128.199.138.244",
             "server_port": 55730,
@@ -409,7 +401,7 @@
             "password": "Fju1zyHANUklhx5m0otKBc"
         },
         {
-            "tag": "🇳🇱 NL | 🟢 | ss | @free1ss | 6",
+            "tag": "🇳🇱 NL | 🟢 | ss | @free1ss | 5",
             "type": "shadowsocks",
             "server": "178.208.91.118",
             "server_port": 19805,
@@ -417,7 +409,7 @@
             "password": "92v8o1nNtKIkQdF8CIFbXw"
         },
         {
-            "tag": "🇩🇪 DE | 🟢 | ss | @free1ss | 7",
+            "tag": "🇩🇪 DE | 🟢 | ss | @free1ss | 6",
             "type": "shadowsocks",
             "server": "62.60.216.61",
             "server_port": 1080,
@@ -425,7 +417,7 @@
             "password": "foKeqDOV9NCiDMMWTiDOoQ"
         },
         {
-            "tag": "🇳🇱 NL | 🟢 | ss | @free1ss | 8",
+            "tag": "🇳🇱 NL | 🟢 | ss | @free1ss | 7",
             "type": "shadowsocks",
             "server": "77.246.102.112",
             "server_port": 60117,
@@ -433,7 +425,7 @@
             "password": "bMkoZdDCpcd4p2UMO2PIYu"
         },
         {
-            "tag": "🇸🇬 SG | 🟢 | ss | @free1ss | 9",
+            "tag": "🇸🇬 SG | 🟢 | ss | @free1ss | 8",
             "type": "shadowsocks",
             "server": "206.189.152.125",
             "server_port": 44038,
@@ -441,7 +433,7 @@
             "password": "6m1Mptr9QJfPIr2n2xDTqN"
         },
         {
-            "tag": "🇳🇱 NL | 🟢 | ss | @free1ss | 10",
+            "tag": "🇳🇱 NL | 🟢 | ss | @free1ss | 9",
             "type": "shadowsocks",
             "server": "193.29.139.133",
             "server_port": 8080,
@@ -449,7 +441,7 @@
             "password": "cvII85TrW6n0OGyfpHVS1u"
         },
         {
-            "tag": "🇯🇵 JP | 🟢 | ss | @free1ss | 12",
+            "tag": "🇯🇵 JP | 🟢 | ss | @free1ss | 11",
             "type": "shadowsocks",
             "server": "54.238.207.188",
             "server_port": 8319,
@@ -457,7 +449,7 @@
             "password": "ljqdalu13.."
         },
         {
-            "tag": "🇷🇺 RU | 🟢 | ss | @free1ss | 13",
+            "tag": "🇷🇺 RU | 🟢 | ss | @free1ss | 12",
             "type": "shadowsocks",
             "server": "45.139.24.24",
             "server_port": 57456,
@@ -465,7 +457,7 @@
             "password": "360e21d21977dc11"
         },
         {
-            "tag": "🇮🇳 IN | 🟢 | ss | @free1ss | 14",
+            "tag": "🇮🇳 IN | 🟢 | ss | @free1ss | 13",
             "type": "shadowsocks",
             "server": "103.111.114.29",
             "server_port": 57456,
@@ -473,7 +465,7 @@
             "password": "360e21d21977dc11"
         },
         {
-            "tag": "🇸🇬 SG | 🟢 | ss | @free1ss | 15",
+            "tag": "🇸🇬 SG | 🟢 | ss | @free1ss | 14",
             "type": "shadowsocks",
             "server": "128.199.231.221",
             "server_port": 59247,
@@ -481,7 +473,7 @@
             "password": "YZ34q4Jb8MTJC7X5b5l2SRUa+rfTSQhvWerDozC9OHA="
         },
         {
-            "tag": "🇫🇮 FI | 🟢 | ss | @free1ss | 17",
+            "tag": "🇫🇮 FI | 🟢 | ss | @free1ss | 15",
             "type": "shadowsocks",
             "server": "185.5.38.111",
             "server_port": 55988,
@@ -489,12 +481,20 @@
             "password": "x6EKaChK1zEYVfctyXeTfyCSPRFFHcDQ1nah5TEknRPe7BNddwijrGDX7xaYR4NRNRfCK9LtQLEgahMfAGCTqZTxCdzVKGg9"
         },
         {
-            "tag": "🇪🇸 ES | 🟢 | ss | @free1ss | 18",
+            "tag": "🇪🇸 ES | 🟢 | ss | @free1ss | 16",
             "type": "shadowsocks",
             "server": "194.87.45.189",
             "server_port": 443,
             "method": "chacha20-ietf-poly1305",
             "password": "sf5NNo7Xyi4GYaF4VODDto"
+        },
+        {
+            "tag": "🇳🇱 NL | 🟢 | ss | @free1ss | 17",
+            "type": "shadowsocks",
+            "server": "193.29.139.175",
+            "server_port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "1RWwXhwfAB5gAEozU4G2Pg"
         },
         {
             "tag": "🇺🇸 US | 🟢 | ss | @key_outline | 0",
@@ -1201,7 +1201,7 @@
             "password": "5qDnlzxeePrpVGpklnsHCI"
         },
         {
-            "tag": "🇫🇷 FR | 🟢 | ss | @vipufovpn | 5",
+            "tag": "🇫🇷 FR | 🟢 | ss | @vipufovpn | 4",
             "type": "shadowsocks",
             "server": "149.202.82.172",
             "server_port": 7306,
@@ -1209,7 +1209,7 @@
             "password": "FoOiGlkAA9yPEGP"
         },
         {
-            "tag": "🇵🇱 PL | 🟢 | ss | @vipufovpn | 6",
+            "tag": "🇵🇱 PL | 🟢 | ss | @vipufovpn | 5",
             "type": "shadowsocks",
             "server": "54.36.174.181",
             "server_port": 2376,
@@ -1217,7 +1217,7 @@
             "password": "faBAoD54k87UJG7"
         },
         {
-            "tag": "🇵🇱 PL | 🟢 | ss | @vipufovpn | 7",
+            "tag": "🇵🇱 PL | 🟢 | ss | @vipufovpn | 6",
             "type": "shadowsocks",
             "server": "51.77.53.200",
             "server_port": 5000,
@@ -1225,7 +1225,7 @@
             "password": "Y6R9pAtvxxzmGC"
         },
         {
-            "tag": "🇵🇱 PL | 🟢 | ss | @vipufovpn | 8",
+            "tag": "🇵🇱 PL | 🟢 | ss | @vipufovpn | 7",
             "type": "shadowsocks",
             "server": "51.77.53.200",
             "server_port": 7307,
@@ -1233,7 +1233,7 @@
             "password": "FoOiGlkAA9yPEGP"
         },
         {
-            "tag": "🇵🇱 PL | 🟢 | ss | @vipufovpn | 9",
+            "tag": "🇵🇱 PL | 🟢 | ss | @vipufovpn | 8",
             "type": "shadowsocks",
             "server": "54.36.174.181",
             "server_port": 5003,
@@ -1241,7 +1241,7 @@
             "password": "g5MeD6Ft3CWlJId"
         },
         {
-            "tag": "🇵🇱 PL | 🟢 | ss | @vipufovpn | 10",
+            "tag": "🇵🇱 PL | 🟢 | ss | @vipufovpn | 9",
             "type": "shadowsocks",
             "server": "54.36.174.181",
             "server_port": 5601,
