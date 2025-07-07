@@ -711,3 +711,50 @@ function is_valid_uuid(?string $uuid): bool
     
     return (bool) preg_match($pattern, $uuid);
 }
+
+/**
+ * Fetches multiple pages of a Telegram channel until the page limit is reached or no more pages are available.
+ *
+ * @param string $channelName The username of the channel.
+ * @param int $maxPages The maximum number of pages to fetch.
+ * @return string The combined HTML content of all fetched pages.
+ */
+function fetch_channel_data_paginated(string $channelName, int $maxPages): string
+{
+    $combinedHtml = '';
+    $nextUrl = "https://t.me/s/{$channelName}";
+    $fetchedPages = 0;
+
+    while ($fetchedPages < $maxPages && $nextUrl) {
+        echo "\rFetching page " . ($fetchedPages + 1) . "/{$maxPages} for channel '{$channelName}'... ";
+        
+        $response = @file_get_contents($nextUrl, false, stream_context_create([
+            'http' => [
+                'timeout' => 15,
+                'user_agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36',
+            ]
+        ]));
+
+        if ($response === false || empty($response)) {
+            // Stop paginating for this channel if a request fails
+            $nextUrl = null;
+            continue;
+        }
+
+        $combinedHtml .= $response;
+
+        // Find the oldest message ID on the page to build the next page URL
+        preg_match_all('/data-post="[^"]+\/(\d+)"/', $response, $matches);
+        
+        if (!empty($matches[1])) {
+            $oldestMessageId = min($matches[1]);
+            $nextUrl = "https://t.me/s/{$channelName}?before={$oldestMessageId}";
+        } else {
+            // No more message IDs found, so it's the last page
+            $nextUrl = null;
+        }
+        $fetchedPages++;
+    }
+
+    return $combinedHtml;
+}
