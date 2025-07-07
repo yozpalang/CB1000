@@ -18,7 +18,7 @@ require_once __DIR__ . '/functions.php';
 // --- Configuration Constants ---
 const INPUT_DIR = __DIR__ . '/subscriptions/xray/base64';
 const OUTPUT_DIR = __DIR__ . '/subscriptions/singbox';
-const STRUCTURE_FILE = __DIR__ . '/structure.json';
+const STRUCTURE_FILE = __DIR__ . '/templates/structure.json';
 const ALLOWED_SS_METHODS = [
     "chacha20-ietf-poly1305",
     "aes-256-gcm",
