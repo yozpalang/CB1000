@@ -85,7 +85,7 @@ echo "\n3. Caching HTML and processing assets..." . PHP_EOL;
 $channelArray = [];
 $logo_urls_to_fetch = [];
 $processedCount = 0;
-
+$totalSources = count($sourcesToProcess);
 foreach ($sourcesToProcess as $source) {
     print_progress(++$processedCount, $totalSources, 'Processing:');
     if (!isset($fetched_html_data[$source]) || empty($fetched_html_data[$source])) {
