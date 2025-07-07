@@ -1170,6 +1170,7 @@
     },
     "entrynet": {
         "types": [
+            "vmess",
             "vless",
             "trojan",
             "ss"
@@ -3056,10 +3057,7 @@
         "logo": "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/merdesert.jpg"
     },
     "merlin_vip": {
-        "types": [
-            "vless",
-            "ss"
-        ],
+        "types": [],
         "title": "فیلترشکن نت ملی رایگان VPN ⚡️",
         "logo": "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/merlin_vip.jpg"
     },
@@ -6409,6 +6407,7 @@
     },
     "v2rayweb": {
         "types": [
+            "vmess",
             "vless",
             "ss"
         ],
@@ -7528,12 +7527,9 @@
         "logo": "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/vpntwitt.jpg"
     },
     "vpnv2rayng90": {
-        "types": [
-            "vless",
-            "ss"
-        ],
-        "title": "Kasra.store",
-        "logo": "https://raw.githubusercontent.com/yebekhe/TVC/main/channelsData/logos/vpnv2rayng90.jpg"
+        "types": [],
+        "title": "Unknown Title",
+        "logo": ""
     },
     "vpnv2rayngv": {
         "types": [
